@@ -1,0 +1,316 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">
+    📊 Dashboard Ejecutivo
+</h2>
+
+<div class="row mb-4">
+
+    <div class="col-md-3">
+        <div class="card bg-primary text-white shadow">
+            <div class="card-body text-center">
+                <h5>📦 Materiales</h5>
+                <h2>{{ total_materiales }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-success text-white shadow">
+            <div class="card-body text-center">
+                <h5>📥 Recepciones</h5>
+                <h2>{{ total_recepciones }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-warning text-dark shadow">
+            <div class="card-body text-center">
+                <h5>📤 Entregas</h5>
+                <h2>{{ total_entregas }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-dark text-white shadow">
+            <div class="card-body text-center">
+                <h5>📋 Movimientos</h5>
+                <h2>{{ total_movimientos }}</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <div class="card shadow mb-4">
+
+            <div class="card-header bg-primary text-white">
+
+                📥 Últimas Recepciones
+
+            </div>
+
+            <div class="card-body">
+
+                <table class="table table-sm">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Proyecto</th>
+                            <th>Fecha</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    {% for r in ultimas_recepciones %}
+
+                        <tr>
+
+                            <td>{{ r.id }}</td>
+
+                            <td>{{ r.proyecto }}</td>
+
+                            <td>{{ r.fecha }}</td>
+
+                        </tr>
+
+                    {% empty %}
+
+                        <tr>
+
+                            <td colspan="3">
+
+                                Sin registros.
+
+                            </td>
+
+                        </tr>
+
+                    {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="card shadow mb-4">
+
+            <div class="card-header bg-success text-white">
+
+                📤 Últimas Entregas
+
+            </div>
+
+            <div class="card-body">
+
+                <table class="table table-sm">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Proyecto</th>
+
+                            <th>Estado</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    {% for e in ultimas_entregas %}
+
+                        <tr>
+
+                            <td>{{ e.id }}</td>
+
+                            <td>{{ e.proyecto }}</td>
+
+                            <td>{{ e.estado }}</td>
+
+                        </tr>
+
+                    {% empty %}
+
+                        <tr>
+
+                            <td colspan="3">
+
+                                Sin registros.
+
+                            </td>
+
+                        </tr>
+
+                    {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card shadow">
+
+    <div class="card-header bg-danger text-white">
+
+        ⚠️ Materiales con Bajo Stock
+
+    </div>
+
+    <div class="card-body">
+
+        <table class="table table-hover">
+
+            <thead>
+
+                <tr>
+
+                    <th>Código</th>
+
+                    <th>Material</th>
+
+                    <th>Stock</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            {% for material in materiales_stock_bajo %}
+
+                <tr>
+
+                    <td>{{ material.codigo }}</td>
+
+                    <td>{{ material.nombre }}</td>
+
+                    <td>
+
+                        <span class="badge bg-danger">
+
+                            {{ material.stock }}
+
+                        </span>
+
+                    </td>
+
+                </tr>
+
+            {% empty %}
+
+                <tr>
+
+                    <td colspan="3">
+
+                        No existen materiales con stock bajo.
+
+                    </td>
+
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="card shadow mt-4">
+
+    <div class="card-header bg-info text-white">
+
+        📈 Entradas vs Salidas
+
+    </div>
+
+    <div class="card-body">
+
+        <canvas id="graficoMovimientos"></canvas>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+const ctx = document.getElementById('graficoMovimientos');
+
+new Chart(ctx, {
+
+    type: 'bar',
+
+    data: {
+
+        labels: ['Entradas', 'Salidas'],
+
+        datasets: [{
+
+            label: 'Cantidad de movimientos',
+
+            data: [
+                {{ entradas }},
+                {{ salidas }}
+            ]
+
+        }]
+
+    },
+
+    options: {
+
+        responsive: true,
+
+        plugins: {
+
+            legend: {
+
+                display: false
+
+            }
+
+        }
+
+    }
+
+});
+
+</script>
+
+{% endblock %}

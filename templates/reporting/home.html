@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+    <h2>
+        📊 Reportes Ejecutivos
+    </h2>
+
+</div>
+
+
+<div class="row mb-4">
+
+
+    <div class="col-md-4">
+
+        <div class="card shadow bg-primary text-white">
+
+            <div class="card-body text-center">
+
+                <h5>📦 Materiales Activos</h5>
+
+                <h1>
+                    {{ total_materiales }}
+                </h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="col-md-4">
+
+        <div class="card shadow bg-dark text-white">
+
+            <div class="card-body text-center">
+
+                <h5>📋 Movimientos</h5>
+
+                <h1>
+                    {{ total_movimientos }}
+                </h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="col-md-4">
+
+        <div class="card shadow bg-success text-white">
+
+            <div class="card-body text-center">
+
+                <h5>📤 Entregas</h5>
+
+                <h1>
+                    {{ total_entregas }}
+                </h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<div class="card shadow mb-4">
+
+<div class="card-header bg-danger text-white">
+
+⚠️ Materiales Bajo Stock
+
+</div>
+
+
+<div class="card-body">
+
+<table class="table table-hover">
+
+<thead class="table-dark">
+
+<tr>
+<th>Código</th>
+<th>Material</th>
+<th>Stock</th>
+</tr>
+
+</thead>
+
+
+<tbody>
+
+{% for material in materiales_bajo_stock %}
+
+<tr>
+
+<td>{{ material.codigo }}</td>
+
+<td>{{ material.nombre }}</td>
+
+<td>
+<span class="badge bg-danger">
+{{ material.stock }}
+</span>
+</td>
+
+</tr>
+
+
+{% empty %}
+
+<tr>
+
+<td colspan="3" class="text-center">
+
+No existen materiales con bajo stock.
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+
+
+
+<div class="card shadow">
+
+
+<div class="card-header bg-info text-white">
+
+📄 Reportes disponibles
+
+<a href="{% url 'management_report_pdf' %}"
+class="btn btn-outline-danger mb-2 w-100">
+
+📄 Reporte Gerencial PDF
+
+</a>
+
+</div>
+
+
+<div class="card-body">
+
+
+<a href="{% url 'inventory_pdf' %}"
+class="btn btn-outline-primary mb-2 w-100">
+
+📄 Inventario Actual PDF
+
+</a>
+
+<a href="{% url 'inventory_excel' %}"
+class="btn btn-outline-success mb-2 w-100">
+
+📥 Inventario Excel
+
+</a>
+
+
+
+<a href="{% url 'kardex_excel' %}"
+class="btn btn-outline-success mb-2 w-100">
+
+📋 Kardex Excel
+
+</a>
+
+
+
+<a href="{% url 'deliveries_excel' %}"
+class="btn btn-outline-dark mb-2 w-100">
+
+📤 Entregas por Proyecto Excel
+
+</a>
+
+<a href="{% url 'deliveries_report' %}"
+class="btn btn-outline-dark mb-2 w-100">
+
+📤 Entregas por Proyecto
+
+</a>
+
+</div>
+
+
+</div>
+
+
+{% endblock %}

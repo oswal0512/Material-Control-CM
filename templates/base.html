@@ -1,0 +1,253 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Material Control CM</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+
+        body{
+            overflow-x:hidden;
+            background:#f4f6f9;
+        }
+
+        .sidebar{
+            width:250px;
+            min-height:100vh;
+            background:#1e3a5f;
+            position:fixed;
+            left:0;
+            top:0;
+        }
+
+        .sidebar .logo{
+            padding:20px;
+            color:white;
+            font-size:22px;
+            font-weight:bold;
+            text-align:center;
+            border-bottom:1px solid rgba(255,255,255,.15);
+        }
+
+        .sidebar a{
+            color:#d8e2ef;
+            text-decoration:none;
+            display:block;
+            padding:14px 20px;
+            transition:.2s;
+        }
+
+        .sidebar a:hover{
+            background:#29507f;
+            color:white;
+        }
+
+        .logout-btn{
+            width:100%;
+            border:none;
+            background:none;
+            color:#d8e2ef;
+            text-align:left;
+            padding:14px 20px;
+            cursor:pointer;
+            transition:.2s;
+        }
+
+        .logout-btn:hover{
+            background:#29507f;
+            color:white;
+        }
+
+        .content{
+            margin-left:250px;
+            min-height:100vh;
+        }
+
+        .topbar{
+            background:white;
+            padding:15px 30px;
+            box-shadow:0 2px 10px rgba(0,0,0,.08);
+        }
+
+        .page{
+            padding:30px;
+        }
+
+        .card{
+            border:none;
+            border-radius:12px;
+        }
+
+        footer{
+            color:#777;
+            text-align:center;
+            padding:20px;
+            font-size:13px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        📦 Material Control CM
+
+    </div>
+
+    <a href="/">
+        <i class="bi bi-speedometer2"></i>
+        Dashboard
+    </a>
+
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
+    <a href="/materials/">
+        <i class="bi bi-box-seam"></i>
+        Materiales
+    </a>
+    {% endif %}
+
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
+    <a href="/recepciones/">
+        <i class="bi bi-box-arrow-in-down"></i>
+        Recepciones
+    </a>
+    {% endif %}
+
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
+    <a href="/entregas/">
+        <i class="bi bi-box-arrow-up"></i>
+        Entregas
+    </a>
+    {% endif %}
+
+    <a href="{% url 'kardex_list' %}">
+        <i class="bi bi-journal-text"></i>
+        Kardex
+    </a>
+
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
+    <a href="{% url 'inventory_list' %}">
+        <i class="bi bi-clipboard-data"></i>
+        Inventario
+    </a>
+    {% endif %}
+
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Gerencia" %}
+    <a href="{% url 'report_home' %}">
+        <i class="bi bi-file-earmark-bar-graph"></i>
+        Reportes
+    </a>
+    {% endif %}
+
+    {% if user.groups.all.0.name == "Administrador" %}
+    <a href="/admin/">
+        <i class="bi bi-gear"></i>
+        Administración
+    </a>
+    {% endif %}
+
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'supplier_list' %}">
+        <i class="fas fa-truck"></i>
+        Proveedores
+    </a>
+</li>
+
+    <hr class="text-white">
+
+    <div class="text-center text-white mb-3">
+
+        <strong>{{ user.username }}</strong><br>
+
+        <small>{{ user.groups.all.0.name }}</small>
+
+    </div>
+
+    <form method="post" action="{% url 'logout' %}" style="margin:0;">
+
+        {% csrf_token %}
+
+        <button type="submit" class="logout-btn">
+
+            <i class="bi bi-box-arrow-right"></i>
+
+            Cerrar sesión
+
+        </button>
+
+    </form>
+
+</div>
+
+<div class="content">
+
+    <div class="topbar d-flex justify-content-between">
+
+        <div>
+
+            <strong>Material Control CM</strong>
+
+        </div>
+
+        <div>
+
+            Versión 1.0
+
+        </div>
+
+    </div>
+
+    <div class="page">
+
+        {% if messages %}
+
+            {% for message in messages %}
+
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show">
+
+                    {{ message }}
+
+                    <button class="btn-close"
+                            data-bs-dismiss="alert">
+
+                    </button>
+
+                </div>
+
+            {% endfor %}
+
+        {% endif %}
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+
+    <footer>
+
+        Material Control CM © 2026
+
+    </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

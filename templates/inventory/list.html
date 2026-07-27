@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+    <h2>📥 Recepciones de Material</h2>
+
+    <a href="{% url 'receipt_create' %}"
+       class="btn btn-success">
+
+        ➕ Nueva Recepción
+
+    </a>
+
+</div>
+
+<div class="card shadow">
+
+    <div class="card-header bg-primary text-white">
+
+        Lista de Recepciones
+
+    </div>
+
+    <div class="card-body">
+
+        <table class="table table-hover table-striped align-middle">
+
+            <thead class="table-dark">
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Fecha</th>
+
+                    <th>Proyecto</th>
+
+                    <th>Proveedor</th>
+
+                    <th>Remisión</th>
+
+                    <th width="260">
+
+                        Acciones
+
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            {% for recepcion in recepciones %}
+
+                <tr>
+
+                    <td>
+
+                        <strong>
+
+                            #{{ recepcion.id }}
+
+                        </strong>
+
+                    </td>
+
+                    <td>
+
+                        {{ recepcion.fecha }}
+
+                    </td>
+
+                    <td>
+
+                        {{ recepcion.proyecto }}
+
+                    </td>
+
+                    <td>
+
+                        {{ recepcion.proveedor }}
+
+                    </td>
+
+                    <td>
+
+                        {{ recepcion.numero_remision }}
+
+                    </td>
+
+                    <td>
+
+                        <a href="{% url 'receipt_detail' recepcion.id %}"
+                           class="btn btn-primary btn-sm">
+
+                            👁 Ver
+
+                        </a>
+
+                        <a href="{% url 'receipt_pdf' recepcion.id %}"
+                           target="_blank"
+                           class="btn btn-danger btn-sm">
+
+                            📄 PDF
+
+                        </a>
+
+                        <a href="{% url 'receipt_excel' recepcion.id %}"
+                           class="btn btn-success btn-sm">
+
+                            📊 Excel
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+            {% empty %}
+
+                <tr>
+
+                    <td colspan="6"
+                        class="text-center">
+
+                        No existen recepciones registradas.
+
+                    </td>
+
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}

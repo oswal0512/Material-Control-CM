@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-5" style="max-width:450px;">
+
+<div class="card shadow">
+
+<div class="card-header bg-primary text-white">
+
+<h4>Material Control CM</h4>
+
+</div>
+
+<div class="card-body">
+
+<form method="post">
+
+{% csrf_token %}
+
+<div class="mb-3">
+
+<label>Usuario</label>
+
+<input
+type="text"
+name="username"
+class="form-control">
+
+</div>
+
+<div class="mb-3">
+
+<label>Contraseña</label>
+
+<input
+type="password"
+name="password"
+class="form-control">
+
+</div>
+
+<button class="btn btn-primary w-100">
+
+Ingresar
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

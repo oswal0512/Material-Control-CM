@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="mb-4">
+
+    Inventario General
+
+</h2>
+
+<table class="table table-bordered table-hover">
+
+    <thead class="table-dark">
+
+        <tr>
+
+            <th>Código</th>
+
+            <th>Material</th>
+
+            <th>Unidad</th>
+
+            <th>Stock</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+    {% for material in materiales %}
+
+        <tr>
+
+            <td>{{ material.codigo }}</td>
+
+            <td>{{ material.nombre }}</td>
+
+            <td>{{ material.unidad }}</td>
+
+            <td>{{ material.stock }}</td>
+
+        </tr>
+
+    {% empty %}
+
+        <tr>
+
+            <td colspan="4">
+
+                No existen materiales.
+
+            </td>
+
+        </tr>
+
+    {% endfor %}
+
+    </tbody>
+
+</table>
+
+{% endblock %}

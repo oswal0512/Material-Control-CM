@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<form method="get" class="card card-body mb-4">
+
+
+<div class="row">
+
+
+<div class="col-md-4">
+
+<label>
+Proyecto
+</label>
+
+
+<select name="proyecto"
+class="form-select">
+
+
+<option value="">
+Todos
+</option>
+
+
+{% for proyecto in proyectos %}
+
+<option value="{{ proyecto.id }}">
+
+{{ proyecto }}
+
+</option>
+
+{% endfor %}
+
+
+</select>
+
+
+</div>
+
+
+
+<div class="col-md-3">
+
+<label>
+Fecha inicio
+</label>
+
+<input type="date"
+name="fecha_inicio"
+class="form-control">
+
+</div>
+
+
+
+<div class="col-md-3">
+
+<label>
+Fecha fin
+</label>
+
+<input type="date"
+name="fecha_fin"
+class="form-control">
+
+</div>
+
+
+
+<div class="col-md-2 d-flex align-items-end">
+
+<button class="btn btn-primary w-100">
+
+🔎 Buscar
+
+</button>
+
+</div>
+
+
+</div>
+
+
+</form>
+
+<h2>
+📤 Entregas por Proyecto
+</h2>
+
+
+<table class="table table-bordered table-hover">
+
+<thead class="table-dark">
+
+<tr>
+
+<th>Fecha</th>
+<th>Proyecto</th>
+<th>Responsable</th>
+<th>Estado</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+{% for entrega in entregas %}
+
+<tr>
+
+<td>
+{{ entrega.fecha }}
+</td>
+
+<td>
+{{ entrega.proyecto }}
+</td>
+
+<td>
+{{ entrega.responsable }}
+</td>
+
+<td>
+
+{{ entrega.estado }}
+
+</td>
+
+
+</tr>
+
+
+{% empty %}
+
+<tr>
+
+<td colspan="4">
+
+No existen entregas registradas.
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+
+</tbody>
+
+
+</table>
+
+
+<a href="{% url 'report_home' %}"
+class="btn btn-secondary">
+
+← Volver
+
+</a>
+
+
+{% endblock %}

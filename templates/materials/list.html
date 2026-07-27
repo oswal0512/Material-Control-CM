@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+
+    <h2>Materiales</h2>
+
+    <a href="{% url 'material_create' %}" class="btn btn-success">
+        ➕ Nuevo Material
+    </a>
+
+</div>
+
+<form method="get" class="row mb-3">
+
+    <div class="col-md-6">
+        
+        <input
+            type="text"
+            class="form-control"
+            name="buscar"
+            placeholder="Buscar por código o nombre..."
+            value="{{ buscar }}"
+        >
+
+    </div>
+
+    <div class="col-md-2">
+
+        <button class="btn btn-primary w-100">
+            Buscar
+        </button>
+
+    </div>
+
+</form>
+
+<table class="table table-bordered table-hover">
+
+    <thead class="table-dark">
+
+        <tr>
+
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Unidad</th>
+            <th>Stock</th>
+            <th width="280">Acciones</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+    {% for material in materiales %}
+
+        <tr>
+
+            <td>{{ material.codigo }}</td>
+
+            <td>{{ material.nombre }}</td>
+
+            <td>{{ material.unidad }}</td>
+
+            <td>{{ material.stock }}</td>
+
+            <td>
+
+               <td>
+
+    <a
+        href="{% url 'material_update' material.id %}"
+        class="btn btn-warning btn-sm">
+        ✏️ Editar
+    </a>
+
+    <a
+        href="{% url 'material_delete' material.id %}"
+        class="btn btn-danger btn-sm"
+        onclick="return confirm('¿Desea desactivar este material?');">
+        🗑️ Eliminar
+    </a>
+
+    <a
+        href="{% url 'material_kardex' material.id %}"
+        class="btn btn-info btn-sm">
+        📋 Kardex
+    </a>
+
+</td>
+
+            </td>
+
+        </tr>
+
+    {% empty %}
+
+        <tr>
+
+            <td colspan="5" class="text-center">
+                No existen materiales registrados.
+            </td>
+
+        </tr>
+
+    {% endfor %}
+
+    </tbody>
+
+</table>
+
+<nav>
+
+    <ul class="pagination">
+
+        {% if materiales.has_previous %}
+
+        <li class="page-item">
+            <a class="page-link"
+               href="?page={{ materiales.previous_page_number }}&buscar={{ buscar }}">
+                Anterior
+            </a>
+        </li>
+
+        {% endif %}
+
+        <li class="page-item active">
+
+            <span class="page-link">
+
+                Página {{ materiales.number }} de {{ materiales.paginator.num_pages }}
+
+            </span>
+
+        </li>
+
+        {% if materiales.has_next %}
+
+        <li class="page-item">
+            <a class="page-link"
+               href="?page={{ materiales.next_page_number }}&buscar={{ buscar }}">
+                Siguiente
+            </a>
+        </li>
+
+        {% endif %}
+
+    </ul>
+
+</nav>
+
+{% endblock %}

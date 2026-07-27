@@ -1,0 +1,253 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2>
+            📥 Recepción {{ recepcion.numero_remision }}
+        </h2>
+
+    </div>
+
+    <!-- Información -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header bg-primary text-white">
+
+            Información de la Recepción
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <p>
+
+                        <strong>Proyecto</strong><br>
+
+                        {{ recepcion.proyecto }}
+
+                    </p>
+
+                    <p>
+
+                        <strong>Proveedor</strong><br>
+
+                        {{ recepcion.proveedor }}
+
+                    </p>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <p>
+
+                        <strong>Fecha</strong><br>
+
+                        {{ recepcion.fecha }}
+
+                    </p>
+
+                    <p>
+
+                        <strong>Remisión</strong><br>
+
+                        {{ recepcion.numero_remision }}
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Agregar material -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header bg-success text-white">
+
+            ➕ Agregar Material
+
+        </div>
+
+        <div class="card-body">
+
+            <form method="post">
+
+                {% csrf_token %}
+
+                {{ form.as_p }}
+
+                <button
+                    type="submit"
+                    class="btn btn-success">
+
+                    ➕ Agregar Material
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Materiales -->
+
+    <div class="card shadow mb-4">
+
+        <div class="card-header">
+
+            📋 Materiales Recibidos
+
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-hover table-bordered">
+
+                <thead class="table-dark">
+
+                    <tr>
+
+                        <th>Código</th>
+
+                        <th>Material</th>
+
+                        <th>Unidad</th>
+
+                        <th>Cantidad</th>
+
+                        <th>Observación</th>
+
+                        <th width="170">
+
+                            Acciones
+
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                {% for detalle in detalles %}
+
+                    <tr>
+
+                        <td>
+
+                            {{ detalle.material.codigo }}
+
+                        </td>
+
+                        <td>
+
+                            {{ detalle.material.nombre }}
+
+                        </td>
+
+                        <td>
+
+                            {{ detalle.material.unidad }}
+
+                        </td>
+
+                        <td>
+
+                            {{ detalle.cantidad }}
+
+                        </td>
+
+                        <td>
+
+                            {{ detalle.observacion }}
+
+                        </td>
+
+                        <td>
+
+                            <a href="{% url 'receipt_detail_edit' detalle.id %}"
+                               class="btn btn-warning btn-sm">
+
+                                ✏️
+
+                            </a>
+
+                            <a href="{% url 'receipt_detail_delete' detalle.id %}"
+                               class="btn btn-danger btn-sm">
+
+                                🗑
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                {% empty %}
+
+                    <tr>
+
+                        <td colspan="6"
+                            class="text-center">
+
+                            No existen materiales registrados.
+
+                        </td>
+
+                    </tr>
+
+                {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Botones -->
+
+    <div class="mb-4">
+
+        <a href="{% url 'receipt_pdf' recepcion.id %}"
+           class="btn btn-danger">
+
+            📄 PDF
+
+        </a>
+
+        <a href="{% url 'receipt_excel' recepcion.id %}"
+           class="btn btn-success">
+
+            📊 Excel
+
+        </a>
+
+        <a href="{% url 'receipt_list' %}"
+           class="btn btn-secondary">
+
+            ← Volver
+
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}
