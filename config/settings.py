@@ -30,14 +30,12 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
 
-    # Django
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
 
     # Aplicaciones Material Control CM
     "accounts",
@@ -46,8 +44,9 @@ INSTALLED_APPS = [
     "materials",
     "movements",
     "projects",
-    "people",.
+    "people",
     "suppliers",
+
 ]
 
 
