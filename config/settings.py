@@ -19,7 +19,7 @@ SECRET_KEY = os.environ.get(
     "django-insecure-cambia-esta-clave-en-render"
 )
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -122,22 +122,32 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 # ==========================
 # BASE DE DATOS
-# PostgreSQL Render
+# Local: SQLite
+# Render: PostgreSQL
 # ==========================
 
-DATABASES = {
+if os.environ.get("DATABASE_URL"):
 
-    "default": dj_database_url.config(
+    DATABASES = {
+        "default": dj_database_url.config(
+            default=os.environ.get("DATABASE_URL"),
+            conn_max_age=600
+        )
+    }
 
-        default=os.environ.get(
-            "DATABASE_URL"
-        ),
+else:
 
-        conn_max_age=600
+    DATABASES = {
 
-    )
+        "default": {
 
-}
+            "ENGINE": "django.db.backends.sqlite3",
+
+            "NAME": BASE_DIR / "db.sqlite3",
+
+        }
+
+    }
 
 
 # ==========================
