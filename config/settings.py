@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     "materials",
     "movements",
     "projects",
-    "people",
+    "people",.
+    "suppliers",
 ]
 
 
