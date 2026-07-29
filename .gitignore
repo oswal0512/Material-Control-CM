@@ -28,3 +28,6 @@ Desktop.ini
 
 # Python cache
 *.egg-info/ 
+
+# Backup database
+respaldo_cm.json
