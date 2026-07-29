@@ -1449,7 +1449,7 @@
   "pk": 7,
   "fields": {
     "codigo": "MT004",
-    "nombre": "Cinta se▒alizacion de cables roja",
+    "nombre": "Cinta se±alizacion de cables roja",
     "unidad": "ML",
     "stock": "386.00",
     "activo": true
@@ -1482,4 +1482,5242 @@
   "pk": 10,
   "fields": {
     "codigo": "MT007",
-    "nombre": 
+    "nombre": "Terminal conector N║4",
+    "unidad": "UND",
+    "stock": "200.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 11,
+  "fields": {
+    "codigo": "MT008",
+    "nombre": "Terminal conector 1/0",
+    "unidad": "UND",
+    "stock": "25.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 12,
+  "fields": {
+    "codigo": "MT009",
+    "nombre": "placa proteccion mecanica",
+    "unidad": "UND",
+    "stock": "3640.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 13,
+  "fields": {
+    "codigo": "MT010",
+    "nombre": "Tuberia 2\" corrugada roja",
+    "unidad": "ML",
+    "stock": "15092.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 14,
+  "fields": {
+    "codigo": "MT011",
+    "nombre": "Tuberia 4\" corrugada roja",
+    "unidad": "ML",
+    "stock": "48.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 15,
+  "fields": {
+    "codigo": "MT012",
+    "nombre": "Tuberia 6\" corrugada roja",
+    "unidad": "ML",
+    "stock": "0.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 16,
+  "fields": {
+    "codigo": "MT013",
+    "nombre": "Conector Ubolt Cu 3/8\"",
+    "unidad": "UND",
+    "stock": "8.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 17,
+  "fields": {
+    "codigo": "MT014",
+    "nombre": "Electrodo (Pica) 2,4 m 1/2\"",
+    "unidad": "UND",
+    "stock": "4.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 18,
+  "fields": {
+    "codigo": "BT001",
+    "nombre": "Cable baja tension 1x400mm--->VG-5616",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 19,
+  "fields": {
+    "codigo": "BT002",
+    "nombre": "Cable baja tension 1x400mm--->VG-5595",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 20,
+  "fields": {
+    "codigo": "BT003",
+    "nombre": "Cable baja tension 1x400mm--->VG-5596",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 21,
+  "fields": {
+    "codigo": "BT004",
+    "nombre": "Cable baja tension 1x400mm--->VG-5620",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 22,
+  "fields": {
+    "codigo": "BT005",
+    "nombre": "Cable baja tension 1x400mm--->VG-5580",
+    "unidad": "ML",
+    "stock": "204.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 23,
+  "fields": {
+    "codigo": "BT006",
+    "nombre": "Cable baja tension 1x400mm--->VG-5591",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 24,
+  "fields": {
+    "codigo": "BT007",
+    "nombre": "Cable baja tension 1x400mm--->VG-5599",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 25,
+  "fields": {
+    "codigo": "BT008",
+    "nombre": "Cable baja tension 1x400mm--->VG-5593",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 26,
+  "fields": {
+    "codigo": "BT009",
+    "nombre": "Cable baja tension 1x400mm--->VG-5615",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 27,
+  "fields": {
+    "codigo": "BT010",
+    "nombre": "Cable baja tension 1x400mm--->VG-5589",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 28,
+  "fields": {
+    "codigo": "BT011",
+    "nombre": "Cable baja tension 1x400mm--->VG-5592",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 29,
+  "fields": {
+    "codigo": "BT012",
+    "nombre": "Cable baja tension 1x400mm--->VG-5584",
+    "unidad": "ML",
+    "stock": "500.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 30,
+  "fields": {
+    "codigo": "BT013",
+    "nombre": "Cable baja tension 1x400mm--->VG-5585",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 31,
+  "fields": {
+    "codigo": "BT014",
+    "nombre": "Cable baja tension 1x400mm--->VG-5578",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 32,
+  "fields": {
+    "codigo": "BT015",
+    "nombre": "Cable baja tension 1x500mm--->VG-5635",
+    "unidad": "ML",
+    "stock": "1300.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 33,
+  "fields": {
+    "codigo": "BT016",
+    "nombre": "Cable baja tension 1x400mm--->VG-5618",
+    "unidad": "ML",
+    "stock": "970.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 34,
+  "fields": {
+    "codigo": "BT017",
+    "nombre": "Cable baja tension 1x400mm--->VG-5586",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 35,
+  "fields": {
+    "codigo": "BT018",
+    "nombre": "Cable baja tension 1x400mm--->VG-5590",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 36,
+  "fields": {
+    "codigo": "BT019",
+    "nombre": "Cable baja tension 1x400mm--->VG-5600",
+    "unidad": "ML",
+    "stock": "10.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 37,
+  "fields": {
+    "codigo": "BT020",
+    "nombre": "Cable baja tension 1x400mm--->VG-5617",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 38,
+  "fields": {
+    "codigo": "BT021",
+    "nombre": "Brida con prteccion uv 55cm",
+    "unidad": "UND",
+    "stock": "20000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 39,
+  "fields": {
+    "codigo": "BT022",
+    "nombre": "Brida con prteccion uv 15cm",
+    "unidad": "UND",
+    "stock": "7800.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 40,
+  "fields": {
+    "codigo": "BT023",
+    "nombre": "Brida con prteccion uv 10cm",
+    "unidad": "UND",
+    "stock": "1700.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 41,
+  "fields": {
+    "codigo": "BT024",
+    "nombre": "Brida con prteccion uv 64cm",
+    "unidad": "UND",
+    "stock": "76000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 42,
+  "fields": {
+    "codigo": "BT025",
+    "nombre": "Brida con prteccion uv 95cm",
+    "unidad": "UND",
+    "stock": "80000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 43,
+  "fields": {
+    "codigo": "MT015",
+    "nombre": "cable de fibra optica",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 44,
+  "fields": {
+    "codigo": "BT026",
+    "nombre": "Cable cobre 35mm--->",
+    "unidad": "ML",
+    "stock": "1000.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 45,
+  "fields": {
+    "codigo": "MEC001",
+    "nombre": "Modulo fotovoltaico",
+    "unidad": "UND",
+    "stock": "19602.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 46,
+  "fields": {
+    "codigo": "MEC002",
+    "nombre": "Hinca Motora - W6X8,5; S355JR; HDG100; 3640mm",
+    "unidad": "UND",
+    "stock": "266.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 47,
+  "fields": {
+    "codigo": "MEC003",
+    "nombre": "Hinca General - W6X7; S355JR; HDG100; 3915mm",
+    "unidad": "UND",
+    "stock": "151.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 48,
+  "fields": {
+    "codigo": "MEC004",
+    "nombre": "Hinca General - W6X7; S355JR; HDG100; 3615mm",
+    "unidad": "UND",
+    "stock": "2160.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 49,
+  "fields": {
+    "codigo": "MEC005",
+    "nombre": "Hinca para inversores",
+    "unidad": "UND",
+    "stock": "72.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 50,
+  "fields": {
+    "codigo": "MEC006",
+    "nombre": "Viga Central - #120x2,5; S420GD; ZM310; 2100mm",
+    "unidad": "UND",
+    "stock": "306.00",
+    "activo": true
+  }
+},
+{
+  "model": "materials.material",
+  "pk": 51,
+  "fields": {
+    "codigo": "MEC007",
+    "nombre": "Viga Externa - #120x2,0; S420GD; ZM310; 11190mm",
+    "unidad": "UND",
+    "stock": "390.00",
+    "activo": true
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 16,
+  "fields": {
+    "material": 4,
+    "fecha": "2026-07-23T04:21:22.711Z",
+    "tipo": "ENTRADA",
+    "cantidad": "850.00",
+    "saldo": "850.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 17,
+  "fields": {
+    "material": 5,
+    "fecha": "2026-07-23T04:23:14.996Z",
+    "tipo": "ENTRADA",
+    "cantidad": "850.00",
+    "saldo": "850.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 18,
+  "fields": {
+    "material": 7,
+    "fecha": "2026-07-23T04:24:56.493Z",
+    "tipo": "ENTRADA",
+    "cantidad": "100.00",
+    "saldo": "100.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 19,
+  "fields": {
+    "material": 7,
+    "fecha": "2026-07-23T04:25:05.363Z",
+    "tipo": "ENTRADA",
+    "cantidad": "900.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Ajuste por edici¾n de recepci¾n"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 20,
+  "fields": {
+    "material": 8,
+    "fecha": "2026-07-23T04:25:21.939Z",
+    "tipo": "ENTRADA",
+    "cantidad": "924.00",
+    "saldo": "924.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 21,
+  "fields": {
+    "material": 9,
+    "fecha": "2026-07-23T04:25:40.395Z",
+    "tipo": "ENTRADA",
+    "cantidad": "8.00",
+    "saldo": "8.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 22,
+  "fields": {
+    "material": 9,
+    "fecha": "2026-07-23T04:26:34.324Z",
+    "tipo": "ENTRADA",
+    "cantidad": "3.00",
+    "saldo": "5.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Ajuste por edici¾n de recepci¾n"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 23,
+  "fields": {
+    "material": 10,
+    "fecha": "2026-07-23T04:27:19.092Z",
+    "tipo": "ENTRADA",
+    "cantidad": "200.00",
+    "saldo": "200.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 24,
+  "fields": {
+    "material": 11,
+    "fecha": "2026-07-23T04:27:24.154Z",
+    "tipo": "ENTRADA",
+    "cantidad": "25.00",
+    "saldo": "25.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 25,
+  "fields": {
+    "material": 12,
+    "fecha": "2026-07-23T04:27:34.122Z",
+    "tipo": "ENTRADA",
+    "cantidad": "4000.00",
+    "saldo": "4000.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 26,
+  "fields": {
+    "material": 9,
+    "fecha": "2026-07-23T04:28:34.014Z",
+    "tipo": "ENTRADA",
+    "cantidad": "3.00",
+    "saldo": "8.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 27,
+  "fields": {
+    "material": 16,
+    "fecha": "2026-07-23T04:28:42.026Z",
+    "tipo": "ENTRADA",
+    "cantidad": "8.00",
+    "saldo": "8.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 28,
+  "fields": {
+    "material": 17,
+    "fecha": "2026-07-23T04:28:49.912Z",
+    "tipo": "ENTRADA",
+    "cantidad": "4.00",
+    "saldo": "4.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 29,
+  "fields": {
+    "material": 14,
+    "fecha": "2026-07-23T04:29:16.354Z",
+    "tipo": "ENTRADA",
+    "cantidad": "8.00",
+    "saldo": "8.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 30,
+  "fields": {
+    "material": 14,
+    "fecha": "2026-07-23T04:29:33.157Z",
+    "tipo": "ENTRADA",
+    "cantidad": "40.00",
+    "saldo": "48.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Ajuste por edici¾n de recepci¾n"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 31,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T04:29:39.116Z",
+    "tipo": "ENTRADA",
+    "cantidad": "12.00",
+    "saldo": "12.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 32,
+  "fields": {
+    "material": 8,
+    "fecha": "2026-07-23T04:29:56.146Z",
+    "tipo": "ENTRADA",
+    "cantidad": "80.00",
+    "saldo": "1004.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 33,
+  "fields": {
+    "material": 8,
+    "fecha": "2026-07-23T04:30:43.113Z",
+    "tipo": "ENTRADA",
+    "cantidad": "80.00",
+    "saldo": "924.00",
+    "referencia": "E-3425004-007",
+    "responsable": "ALMACEN",
+    "observacion": "Ajuste por edici¾n de recepci¾n"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 34,
+  "fields": {
+    "material": 6,
+    "fecha": "2026-07-23T04:31:30.479Z",
+    "tipo": "ENTRADA",
+    "cantidad": "850.00",
+    "saldo": "850.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 35,
+  "fields": {
+    "material": 13,
+    "fecha": "2026-07-23T04:31:51.093Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 36,
+  "fields": {
+    "material": 18,
+    "fecha": "2026-07-23T04:48:42.469Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-009",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 37,
+  "fields": {
+    "material": 19,
+    "fecha": "2026-07-23T04:48:50.870Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-009",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 38,
+  "fields": {
+    "material": 20,
+    "fecha": "2026-07-23T04:48:59.926Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-009",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 39,
+  "fields": {
+    "material": 21,
+    "fecha": "2026-07-23T04:50:24.719Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 40,
+  "fields": {
+    "material": 22,
+    "fecha": "2026-07-23T04:50:33.960Z",
+    "tipo": "ENTRADA",
+    "cantidad": "993.00",
+    "saldo": "993.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 41,
+  "fields": {
+    "material": 23,
+    "fecha": "2026-07-23T04:50:47.828Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 42,
+  "fields": {
+    "material": 24,
+    "fecha": "2026-07-23T04:50:57.588Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 43,
+  "fields": {
+    "material": 25,
+    "fecha": "2026-07-23T04:51:05.853Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 44,
+  "fields": {
+    "material": 26,
+    "fecha": "2026-07-23T04:51:14.387Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 45,
+  "fields": {
+    "material": 27,
+    "fecha": "2026-07-23T04:51:23.669Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 46,
+  "fields": {
+    "material": 28,
+    "fecha": "2026-07-23T04:52:50.209Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 47,
+  "fields": {
+    "material": 29,
+    "fecha": "2026-07-23T04:53:20.399Z",
+    "tipo": "ENTRADA",
+    "cantidad": "500.00",
+    "saldo": "500.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 48,
+  "fields": {
+    "material": 30,
+    "fecha": "2026-07-23T04:54:26.365Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 49,
+  "fields": {
+    "material": 31,
+    "fecha": "2026-07-23T04:54:37.678Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 50,
+  "fields": {
+    "material": 32,
+    "fecha": "2026-07-23T04:55:00.092Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1300.00",
+    "saldo": "1300.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 51,
+  "fields": {
+    "material": 33,
+    "fecha": "2026-07-23T04:55:10.327Z",
+    "tipo": "ENTRADA",
+    "cantidad": "970.00",
+    "saldo": "970.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 52,
+  "fields": {
+    "material": 34,
+    "fecha": "2026-07-23T04:55:23.147Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 53,
+  "fields": {
+    "material": 35,
+    "fecha": "2026-07-23T04:55:32.532Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 54,
+  "fields": {
+    "material": 36,
+    "fecha": "2026-07-23T04:55:40.094Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 55,
+  "fields": {
+    "material": 37,
+    "fecha": "2026-07-23T04:55:47.190Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 56,
+  "fields": {
+    "material": 38,
+    "fecha": "2026-07-23T04:56:38.966Z",
+    "tipo": "ENTRADA",
+    "cantidad": "20000.00",
+    "saldo": "20000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 57,
+  "fields": {
+    "material": 39,
+    "fecha": "2026-07-23T04:56:48.334Z",
+    "tipo": "ENTRADA",
+    "cantidad": "7800.00",
+    "saldo": "7800.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 58,
+  "fields": {
+    "material": 40,
+    "fecha": "2026-07-23T04:57:09.670Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1700.00",
+    "saldo": "1700.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 59,
+  "fields": {
+    "material": 41,
+    "fecha": "2026-07-23T04:57:27.643Z",
+    "tipo": "ENTRADA",
+    "cantidad": "76000.00",
+    "saldo": "76000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 60,
+  "fields": {
+    "material": 42,
+    "fecha": "2026-07-23T04:57:36.097Z",
+    "tipo": "ENTRADA",
+    "cantidad": "80000.00",
+    "saldo": "80000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 61,
+  "fields": {
+    "material": 43,
+    "fecha": "2026-07-23T04:57:47.244Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1000.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 62,
+  "fields": {
+    "material": 44,
+    "fecha": "2026-07-23T04:57:54.429Z",
+    "tipo": "ENTRADA",
+    "cantidad": "100.00",
+    "saldo": "100.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 63,
+  "fields": {
+    "material": 44,
+    "fecha": "2026-07-23T04:58:01.580Z",
+    "tipo": "ENTRADA",
+    "cantidad": "900.00",
+    "saldo": "1000.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Ajuste por edici¾n de recepci¾n"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 64,
+  "fields": {
+    "material": 49,
+    "fecha": "2026-07-23T05:06:49.179Z",
+    "tipo": "ENTRADA",
+    "cantidad": "20.00",
+    "saldo": "20.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 65,
+  "fields": {
+    "material": 46,
+    "fecha": "2026-07-23T05:07:30.417Z",
+    "tipo": "ENTRADA",
+    "cantidad": "86.00",
+    "saldo": "86.00",
+    "referencia": "E-3425004-010",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 66,
+  "fields": {
+    "material": 47,
+    "fecha": "2026-07-23T05:07:43.851Z",
+    "tipo": "ENTRADA",
+    "cantidad": "48.00",
+    "saldo": "48.00",
+    "referencia": "E-3425004-010",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 67,
+  "fields": {
+    "material": 48,
+    "fecha": "2026-07-23T05:07:54.456Z",
+    "tipo": "ENTRADA",
+    "cantidad": "384.00",
+    "saldo": "384.00",
+    "referencia": "E-3425004-010",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 68,
+  "fields": {
+    "material": 49,
+    "fecha": "2026-07-23T05:08:45.017Z",
+    "tipo": "ENTRADA",
+    "cantidad": "52.00",
+    "saldo": "72.00",
+    "referencia": "E-3425004-010",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 69,
+  "fields": {
+    "material": 48,
+    "fecha": "2026-07-23T05:10:12.356Z",
+    "tipo": "ENTRADA",
+    "cantidad": "544.00",
+    "saldo": "928.00",
+    "referencia": "E-3425004-011",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 70,
+  "fields": {
+    "material": 48,
+    "fecha": "2026-07-23T05:11:01.586Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1600.00",
+    "saldo": "2528.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 71,
+  "fields": {
+    "material": 47,
+    "fecha": "2026-07-23T05:11:10.086Z",
+    "tipo": "ENTRADA",
+    "cantidad": "103.00",
+    "saldo": "151.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 72,
+  "fields": {
+    "material": 46,
+    "fecha": "2026-07-23T05:11:24.539Z",
+    "tipo": "ENTRADA",
+    "cantidad": "216.00",
+    "saldo": "302.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 73,
+  "fields": {
+    "material": 50,
+    "fecha": "2026-07-23T05:12:32.719Z",
+    "tipo": "ENTRADA",
+    "cantidad": "306.00",
+    "saldo": "306.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 74,
+  "fields": {
+    "material": 51,
+    "fecha": "2026-07-23T05:12:42.515Z",
+    "tipo": "ENTRADA",
+    "cantidad": "390.00",
+    "saldo": "390.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 75,
+  "fields": {
+    "material": 45,
+    "fecha": "2026-07-23T05:17:42.085Z",
+    "tipo": "ENTRADA",
+    "cantidad": "2376.00",
+    "saldo": "2376.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 76,
+  "fields": {
+    "material": 45,
+    "fecha": "2026-07-23T05:18:18.238Z",
+    "tipo": "ENTRADA",
+    "cantidad": "3564.00",
+    "saldo": "5940.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 77,
+  "fields": {
+    "material": 45,
+    "fecha": "2026-07-23T05:20:32.698Z",
+    "tipo": "ENTRADA",
+    "cantidad": "2970.00",
+    "saldo": "8910.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 78,
+  "fields": {
+    "material": 45,
+    "fecha": "2026-07-23T05:21:13.268Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1188.00",
+    "saldo": "10098.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 79,
+  "fields": {
+    "material": 45,
+    "fecha": "2026-07-23T05:22:38.732Z",
+    "tipo": "ENTRADA",
+    "cantidad": "5346.00",
+    "saldo": "15444.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 80,
+  "fields": {
+    "material": 45,
+    "fecha": "2026-07-23T05:23:42.281Z",
+    "tipo": "ENTRADA",
+    "cantidad": "2376.00",
+    "saldo": "17820.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 81,
+  "fields": {
+    "material": 45,
+    "fecha": "2026-07-23T05:24:44.390Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1782.00",
+    "saldo": "19602.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 82,
+  "fields": {
+    "material": 17,
+    "fecha": "2026-07-23T05:28:18.763Z",
+    "tipo": "SALIDA",
+    "cantidad": "2.00",
+    "saldo": "2.00",
+    "referencia": "ENT-10",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 83,
+  "fields": {
+    "material": 17,
+    "fecha": "2026-07-23T05:28:18.794Z",
+    "tipo": "SALIDA",
+    "cantidad": "2.00",
+    "saldo": "0.00",
+    "referencia": "ENT-10",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de almacÚn"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 84,
+  "fields": {
+    "material": 8,
+    "fecha": "2026-07-23T05:28:43.545Z",
+    "tipo": "SALIDA",
+    "cantidad": "28.00",
+    "saldo": "896.00",
+    "referencia": "ENT-10",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 85,
+  "fields": {
+    "material": 8,
+    "fecha": "2026-07-23T05:28:43.576Z",
+    "tipo": "SALIDA",
+    "cantidad": "28.00",
+    "saldo": "868.00",
+    "referencia": "ENT-10",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de almacÚn"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 86,
+  "fields": {
+    "material": 8,
+    "fecha": "2026-07-23T05:33:30.157Z",
+    "tipo": "SALIDA",
+    "cantidad": "107.00",
+    "saldo": "761.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 87,
+  "fields": {
+    "material": 8,
+    "fecha": "2026-07-23T05:33:30.200Z",
+    "tipo": "SALIDA",
+    "cantidad": "107.00",
+    "saldo": "654.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de almacÚn"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 88,
+  "fields": {
+    "material": 6,
+    "fecha": "2026-07-23T05:34:15.210Z",
+    "tipo": "SALIDA",
+    "cantidad": "355.00",
+    "saldo": "495.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 90,
+  "fields": {
+    "material": 4,
+    "fecha": "2026-07-23T05:34:24.277Z",
+    "tipo": "SALIDA",
+    "cantidad": "355.00",
+    "saldo": "495.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 92,
+  "fields": {
+    "material": 5,
+    "fecha": "2026-07-23T05:34:37.571Z",
+    "tipo": "SALIDA",
+    "cantidad": "355.00",
+    "saldo": "495.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 99,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:43:07.325Z",
+    "tipo": "SALIDA",
+    "cantidad": "12.00",
+    "saldo": "-12.00",
+    "referencia": "ANULACION-E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Eliminaci¾n de detalle de recepci¾n"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 100,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:43:20.850Z",
+    "tipo": "ENTRADA",
+    "cantidad": "12.00",
+    "saldo": "12.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 101,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:46:58.405Z",
+    "tipo": "SALIDA",
+    "cantidad": "12.00",
+    "saldo": "0.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 102,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:47:38.276Z",
+    "tipo": "ENTRADA",
+    "cantidad": "12.00",
+    "saldo": "12.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 103,
+  "fields": {
+    "material": 17,
+    "fecha": "2026-07-23T05:47:43.930Z",
+    "tipo": "ENTRADA",
+    "cantidad": "2.00",
+    "saldo": "2.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 104,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:50:41.009Z",
+    "tipo": "SALIDA",
+    "cantidad": "12.00",
+    "saldo": "0.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 105,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:51:21.176Z",
+    "tipo": "SALIDA",
+    "cantidad": "12.00",
+    "saldo": "-12.00",
+    "referencia": "ANULACION-E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Eliminaci¾n de detalle de recepci¾n"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 106,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:51:29.642Z",
+    "tipo": "ENTRADA",
+    "cantidad": "12.00",
+    "saldo": "0.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 107,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:53:13.592Z",
+    "tipo": "SALIDA",
+    "cantidad": "12.00",
+    "saldo": "0.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 108,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:54:33.145Z",
+    "tipo": "SALIDA",
+    "cantidad": "12.00",
+    "saldo": "0.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 109,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T05:55:31.558Z",
+    "tipo": "SALIDA",
+    "cantidad": "12.00",
+    "saldo": "0.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 110,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T06:09:00.250Z",
+    "tipo": "ENTRADA",
+    "cantidad": "50.00",
+    "saldo": "150.00",
+    "referencia": "ED002",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 111,
+  "fields": {
+    "material": 15,
+    "fecha": "2026-07-23T06:18:56.789Z",
+    "tipo": "SALIDA",
+    "cantidad": "12.00",
+    "saldo": "138.00",
+    "referencia": "ENT-11",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 112,
+  "fields": {
+    "material": 8,
+    "fecha": "2026-07-23T06:43:30.451Z",
+    "tipo": "SALIDA",
+    "cantidad": "225.00",
+    "saldo": "429.00",
+    "referencia": "ENT-12",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 113,
+  "fields": {
+    "material": 13,
+    "fecha": "2026-07-23T06:43:42.073Z",
+    "tipo": "SALIDA",
+    "cantidad": "400.00",
+    "saldo": "600.00",
+    "referencia": "ENT-12",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 114,
+  "fields": {
+    "material": 12,
+    "fecha": "2026-07-23T06:43:54.750Z",
+    "tipo": "SALIDA",
+    "cantidad": "360.00",
+    "saldo": "3640.00",
+    "referencia": "ENT-12",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 115,
+  "fields": {
+    "material": 7,
+    "fecha": "2026-07-23T06:44:10.311Z",
+    "tipo": "SALIDA",
+    "cantidad": "360.00",
+    "saldo": "640.00",
+    "referencia": "ENT-12",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 116,
+  "fields": {
+    "material": 8,
+    "fecha": "2026-07-23T06:46:07.686Z",
+    "tipo": "SALIDA",
+    "cantidad": "238.00",
+    "saldo": "191.00",
+    "referencia": "ENT-13",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 117,
+  "fields": {
+    "material": 7,
+    "fecha": "2026-07-23T06:46:26.544Z",
+    "tipo": "SALIDA",
+    "cantidad": "254.00",
+    "saldo": "386.00",
+    "referencia": "ENT-13",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 118,
+  "fields": {
+    "material": 13,
+    "fecha": "2026-07-23T06:47:08.142Z",
+    "tipo": "SALIDA",
+    "cantidad": "508.00",
+    "saldo": "92.00",
+    "referencia": "ENT-13",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 119,
+  "fields": {
+    "material": 4,
+    "fecha": "2026-07-23T06:55:03.439Z",
+    "tipo": "SALIDA",
+    "cantidad": "254.00",
+    "saldo": "241.00",
+    "referencia": "ENT-13",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 120,
+  "fields": {
+    "material": 5,
+    "fecha": "2026-07-23T06:55:13.082Z",
+    "tipo": "SALIDA",
+    "cantidad": "254.00",
+    "saldo": "241.00",
+    "referencia": "ENT-13",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 121,
+  "fields": {
+    "material": 6,
+    "fecha": "2026-07-23T06:55:22.284Z",
+    "tipo": "SALIDA",
+    "cantidad": "254.00",
+    "saldo": "241.00",
+    "referencia": "ENT-13",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 122,
+  "fields": {
+    "material": 22,
+    "fecha": "2026-07-23T07:12:18.123Z",
+    "tipo": "SALIDA",
+    "cantidad": "789.00",
+    "saldo": "204.00",
+    "referencia": "ENT-14",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 123,
+  "fields": {
+    "material": 36,
+    "fecha": "2026-07-23T07:13:15.789Z",
+    "tipo": "SALIDA",
+    "cantidad": "228.00",
+    "saldo": "772.00",
+    "referencia": "ENT-14",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 124,
+  "fields": {
+    "material": 36,
+    "fecha": "2026-07-23T07:13:53.623Z",
+    "tipo": "SALIDA",
+    "cantidad": "102.00",
+    "saldo": "670.00",
+    "referencia": "ENT-14",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 125,
+  "fields": {
+    "material": 36,
+    "fecha": "2026-07-23T07:15:18.304Z",
+    "tipo": "ENTRADA",
+    "cantidad": "102.00",
+    "saldo": "772.00",
+    "referencia": "ELIM-ENT-14",
+    "responsable": "Camilo barreto",
+    "observacion": "Eliminaci¾n de detalle de entrega"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 126,
+  "fields": {
+    "material": 36,
+    "fecha": "2026-07-23T07:15:33.245Z",
+    "tipo": "ENTRADA",
+    "cantidad": "228.00",
+    "saldo": "1000.00",
+    "referencia": "ELIM-ENT-14",
+    "responsable": "Camilo barreto",
+    "observacion": "Eliminaci¾n de detalle de entrega"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 127,
+  "fields": {
+    "material": 36,
+    "fecha": "2026-07-23T07:15:52.268Z",
+    "tipo": "SALIDA",
+    "cantidad": "990.00",
+    "saldo": "10.00",
+    "referencia": "ENT-14",
+    "responsable": "Camilo barreto",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 128,
+  "fields": {
+    "material": 13,
+    "fecha": "2026-07-23T13:12:44.904Z",
+    "tipo": "ENTRADA",
+    "cantidad": "10000.00",
+    "saldo": "10092.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Recepci¾n de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 129,
+  "fields": {
+    "material": 13,
+    "fecha": "2026-07-23T13:14:13.390Z",
+    "tipo": "ENTRADA",
+    "cantidad": "5000.00",
+    "saldo": "15092.00",
+    "referencia": "E-3425004-XXX",
+    "responsable": "ALMACEN",
+    "observacion": "Ajuste por edici¾n de recepci¾n"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 130,
+  "fields": {
+    "material": 46,
+    "fecha": "2026-07-23T21:45:54.394Z",
+    "tipo": "SALIDA",
+    "cantidad": "10.00",
+    "saldo": "292.00",
+    "referencia": "ENT-15",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 131,
+  "fields": {
+    "material": 48,
+    "fecha": "2026-07-23T21:47:08.020Z",
+    "tipo": "SALIDA",
+    "cantidad": "160.00",
+    "saldo": "2368.00",
+    "referencia": "ENT-15",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 132,
+  "fields": {
+    "material": 47,
+    "fecha": "2026-07-23T21:47:35.178Z",
+    "tipo": "SALIDA",
+    "cantidad": "1.00",
+    "saldo": "150.00",
+    "referencia": "ENT-15",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 133,
+  "fields": {
+    "material": 46,
+    "fecha": "2026-07-23T21:53:32.252Z",
+    "tipo": "SALIDA",
+    "cantidad": "12.00",
+    "saldo": "280.00",
+    "referencia": "ENT-16",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 134,
+  "fields": {
+    "material": 48,
+    "fecha": "2026-07-23T21:53:44.316Z",
+    "tipo": "SALIDA",
+    "cantidad": "128.00",
+    "saldo": "2240.00",
+    "referencia": "ENT-16",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 135,
+  "fields": {
+    "material": 46,
+    "fecha": "2026-07-23T21:54:49.071Z",
+    "tipo": "SALIDA",
+    "cantidad": "7.00",
+    "saldo": "273.00",
+    "referencia": "ENT-17",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 136,
+  "fields": {
+    "material": 48,
+    "fecha": "2026-07-23T21:54:55.969Z",
+    "tipo": "SALIDA",
+    "cantidad": "70.00",
+    "saldo": "2170.00",
+    "referencia": "ENT-17",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 137,
+  "fields": {
+    "material": 46,
+    "fecha": "2026-07-23T21:55:36.162Z",
+    "tipo": "SALIDA",
+    "cantidad": "9.00",
+    "saldo": "264.00",
+    "referencia": "ENT-18",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 138,
+  "fields": {
+    "material": 48,
+    "fecha": "2026-07-23T21:55:41.809Z",
+    "tipo": "SALIDA",
+    "cantidad": "90.00",
+    "saldo": "2080.00",
+    "referencia": "ENT-18",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 139,
+  "fields": {
+    "material": 46,
+    "fecha": "2026-07-23T21:56:24.456Z",
+    "tipo": "SALIDA",
+    "cantidad": "8.00",
+    "saldo": "256.00",
+    "referencia": "ENT-19",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 140,
+  "fields": {
+    "material": 48,
+    "fecha": "2026-07-23T21:56:36.624Z",
+    "tipo": "SALIDA",
+    "cantidad": "80.00",
+    "saldo": "2000.00",
+    "referencia": "ENT-19",
+    "responsable": "Luis mu±oz",
+    "observacion": "Entrega de material"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 141,
+  "fields": {
+    "material": 48,
+    "fecha": "2026-07-23T22:00:47.965Z",
+    "tipo": "ENTRADA",
+    "cantidad": "160.00",
+    "saldo": "2160.00",
+    "referencia": "ELIM-ENT-15",
+    "responsable": "Luis mu±oz",
+    "observacion": "Eliminaci¾n de detalle de entrega"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 142,
+  "fields": {
+    "material": 46,
+    "fecha": "2026-07-23T22:00:51.882Z",
+    "tipo": "ENTRADA",
+    "cantidad": "10.00",
+    "saldo": "266.00",
+    "referencia": "ELIM-ENT-15",
+    "responsable": "Luis mu±oz",
+    "observacion": "Eliminaci¾n de detalle de entrega"
+  }
+},
+{
+  "model": "movements.inventorymovement",
+  "pk": 143,
+  "fields": {
+    "material": 47,
+    "fecha": "2026-07-23T22:00:54.124Z",
+    "tipo": "ENTRADA",
+    "cantidad": "1.00",
+    "saldo": "151.00",
+    "referencia": "ELIM-ENT-15",
+    "responsable": "Luis mu±oz",
+    "observacion": "Eliminaci¾n de detalle de entrega"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 10,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Camilo barreto",
+    "fecha": "2026-07-09",
+    "observacion": "",
+    "estado": "FINALIZADA"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 11,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Camilo barreto",
+    "fecha": "2026-07-10",
+    "observacion": "",
+    "estado": "FINALIZADA"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 12,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Camilo barreto",
+    "fecha": "2026-07-11",
+    "observacion": "",
+    "estado": "FINALIZADA"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 13,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Camilo barreto",
+    "fecha": "2026-07-14",
+    "observacion": "",
+    "estado": "FINALIZADA"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 14,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Camilo barreto",
+    "fecha": "2026-07-21",
+    "observacion": "",
+    "estado": "FINALIZADA"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 15,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Luis mu±oz",
+    "fecha": "2026-07-19",
+    "observacion": "",
+    "estado": "BORRADOR"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 16,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Luis mu±oz",
+    "fecha": "2026-07-17",
+    "observacion": "",
+    "estado": "BORRADOR"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 17,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Luis mu±oz",
+    "fecha": "2026-07-18",
+    "observacion": "",
+    "estado": "BORRADOR"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 18,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Luis mu±oz",
+    "fecha": "2026-07-19",
+    "observacion": "",
+    "estado": "BORRADOR"
+  }
+},
+{
+  "model": "movements.delivery",
+  "pk": 19,
+  "fields": {
+    "proyecto": 1,
+    "responsable": "Luis mu±oz",
+    "fecha": "2026-07-21",
+    "observacion": "",
+    "estado": "BORRADOR"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 10,
+  "fields": {
+    "entrega": 10,
+    "material": 17,
+    "cantidad": "2.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 11,
+  "fields": {
+    "entrega": 10,
+    "material": 8,
+    "cantidad": "28.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 12,
+  "fields": {
+    "entrega": 11,
+    "material": 8,
+    "cantidad": "107.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 13,
+  "fields": {
+    "entrega": 11,
+    "material": 6,
+    "cantidad": "355.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 14,
+  "fields": {
+    "entrega": 11,
+    "material": 4,
+    "cantidad": "355.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 15,
+  "fields": {
+    "entrega": 11,
+    "material": 5,
+    "cantidad": "355.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 16,
+  "fields": {
+    "entrega": 11,
+    "material": 15,
+    "cantidad": "12.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 17,
+  "fields": {
+    "entrega": 12,
+    "material": 8,
+    "cantidad": "225.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 18,
+  "fields": {
+    "entrega": 12,
+    "material": 13,
+    "cantidad": "400.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 19,
+  "fields": {
+    "entrega": 12,
+    "material": 12,
+    "cantidad": "360.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 20,
+  "fields": {
+    "entrega": 12,
+    "material": 7,
+    "cantidad": "360.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 21,
+  "fields": {
+    "entrega": 13,
+    "material": 8,
+    "cantidad": "238.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 22,
+  "fields": {
+    "entrega": 13,
+    "material": 7,
+    "cantidad": "254.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 23,
+  "fields": {
+    "entrega": 13,
+    "material": 13,
+    "cantidad": "508.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 24,
+  "fields": {
+    "entrega": 13,
+    "material": 4,
+    "cantidad": "254.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 25,
+  "fields": {
+    "entrega": 13,
+    "material": 5,
+    "cantidad": "254.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 26,
+  "fields": {
+    "entrega": 13,
+    "material": 6,
+    "cantidad": "254.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 27,
+  "fields": {
+    "entrega": 14,
+    "material": 22,
+    "cantidad": "789.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 30,
+  "fields": {
+    "entrega": 14,
+    "material": 36,
+    "cantidad": "990.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 34,
+  "fields": {
+    "entrega": 16,
+    "material": 46,
+    "cantidad": "12.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 35,
+  "fields": {
+    "entrega": 16,
+    "material": 48,
+    "cantidad": "128.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 36,
+  "fields": {
+    "entrega": 17,
+    "material": 46,
+    "cantidad": "7.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 37,
+  "fields": {
+    "entrega": 17,
+    "material": 48,
+    "cantidad": "70.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 38,
+  "fields": {
+    "entrega": 18,
+    "material": 46,
+    "cantidad": "9.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 39,
+  "fields": {
+    "entrega": 18,
+    "material": 48,
+    "cantidad": "90.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 40,
+  "fields": {
+    "entrega": 19,
+    "material": 46,
+    "cantidad": "8.00"
+  }
+},
+{
+  "model": "movements.deliverydetail",
+  "pk": 41,
+  "fields": {
+    "entrega": 19,
+    "material": 48,
+    "cantidad": "80.00"
+  }
+},
+{
+  "model": "projects.project",
+  "pk": 1,
+  "fields": {
+    "nombre": "LA TABLA",
+    "cliente": "NEGRATIN",
+    "ubicacion": "PUERTO LOPEZ",
+    "fecha_inicio": "2026-06-01",
+    "fecha_fin": "1930-09-30",
+    "activo": true
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-07-17T03:13:35.536Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "1",
+    "object_repr": "MT001 - Cable conductor 150 mm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-07-17T03:15:11.766Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "projects",
+      "project"
+    ],
+    "object_id": "1",
+    "object_repr": "LA TABLA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-07-17T03:17:54.834Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "1",
+    "object_repr": "Receipt object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"receipt detail\", \"object\": \"Cable conductor 150 mm\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-07-17T03:18:16.704Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "1",
+    "object_repr": "Receipt object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-07-17T03:18:37.404Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "1",
+    "object_repr": "MT001 - Cable conductor 150 mm",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-07-17T03:18:54.604Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "1",
+    "object_repr": "Receipt object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-07-17T03:19:10.706Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "1",
+    "object_repr": "Receipt object (1)",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-07-17T03:23:29.603Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "1",
+    "object_repr": "MT001 - Cable conductor 150 mm",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-07-17T03:24:02.961Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "2",
+    "object_repr": "ED003 - NEGRATIN",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"receipt detail\", \"object\": \"Cable conductor 150 mm\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-07-17T03:34:19.615Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "3",
+    "object_repr": "ED004 - NEGRATIN",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"receipt detail\", \"object\": \"Cable conductor 150 mm\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-07-17T03:50:43.841Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "2",
+    "object_repr": "SALIDA - Cable conductor 150 mm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-07-17T03:51:38.013Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "1",
+    "object_repr": "Entrega #1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"delivery detail\", \"object\": \"Cable conductor 150 mm\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-07-17T05:32:50.084Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "2",
+    "object_repr": "Entrega #2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"delivery detail\", \"object\": \"Cable conductor 150 mm\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-07-17T05:34:04.271Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "2",
+    "object_repr": "Entrega #2",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-07-17T12:33:25.896Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "4",
+    "object_repr": "ED004 - NEGRATIN",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"receipt detail\", \"object\": \"Cable conductor 150 mm\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-07-17T18:41:37.796Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "jessica",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-07-17T18:44:18.229Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "jessica",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-07-17T18:58:35.258Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "jessica",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-07-17T18:59:24.907Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-07-17T18:59:54.733Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "jessica",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-07-18T17:36:39.077Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "2",
+    "object_repr": "MT002 - PLACA DE PROTECCION MECANICA",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-07-18T17:38:01.914Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "1",
+    "object_repr": "MT001 - Cable conductor 150 mm",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Activo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-07-18T17:38:21.379Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "jessica",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-07-21T18:00:53.691Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "4",
+    "object_repr": "Entrega #4",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Estado\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-07-21T18:02:44.578Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "3",
+    "object_repr": "Entrega #3",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-07-21T19:58:00.481Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "1",
+    "object_repr": "MT001 - Cable conductor 150 mm",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-07-22T06:06:12.634Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "1",
+    "object_repr": "Administrador",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-07-22T06:06:26.119Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "2",
+    "object_repr": "Almacenista",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-07-22T06:06:47.455Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "3",
+    "object_repr": "GErencia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-07-22T06:07:00.374Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "4",
+    "object_repr": "Consulta",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-07-23T00:56:51.715Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "4",
+    "object_repr": "Consulta",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-07-23T00:57:02.040Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "5",
+    "object_repr": "Consulta",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-07-23T00:58:03.753Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"User permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-07-23T01:02:58.588Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "Almacenista",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-07-23T01:05:10.755Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "Almacenista",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-07-23T01:09:09.151Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "2",
+    "object_repr": "Almacenista",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-07-23T01:09:44.829Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "Gerencia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-07-23T01:10:23.774Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "Consulta",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-07-23T01:10:44.782Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "Consulta",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-07-23T01:10:58.038Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "Gerencia",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2026-07-23T01:11:21.979Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "Almacenista",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2026-07-23T01:11:52.181Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2026-07-23T01:12:25.212Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "Almacenista",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2026-07-23T01:12:35.899Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "Gerencia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2026-07-23T01:12:43.647Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "Consulta",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2026-07-23T01:12:51.291Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "Almacenista",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2026-07-23T01:13:57.655Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "5",
+    "object_repr": "Consulta",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2026-07-23T01:14:22.737Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "object_id": "3",
+    "object_repr": "Gerencia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2026-07-23T03:40:59.985Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "3",
+    "object_repr": "almacenista",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2026-07-23T03:41:08.473Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "4",
+    "object_repr": "gerencia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2026-07-23T03:41:15.573Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "5",
+    "object_repr": "consulta",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2026-07-23T04:05:10.731Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "6",
+    "object_repr": "ED005 - NEGRATIN",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2026-07-23T04:05:10.731Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "5",
+    "object_repr": "ED005 - NEGRATIN",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2026-07-23T04:05:10.731Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "4",
+    "object_repr": "ED004 - NEGRATIN",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2026-07-23T04:05:10.731Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "3",
+    "object_repr": "ED004 - NEGRATIN",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2026-07-23T04:05:10.731Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "2",
+    "object_repr": "ED003 - NEGRATIN",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2026-07-23T04:05:10.731Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "inventory",
+      "receipt"
+    ],
+    "object_id": "1",
+    "object_repr": "ED002 - NEGRATIN",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2026-07-23T04:05:35.322Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "3",
+    "object_repr": "MT003 - Conector tipo C 1/0",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2026-07-23T04:05:35.322Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "2",
+    "object_repr": "MT002 - PLACA DE PROTECCION MECANICA",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2026-07-23T04:05:35.322Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "1",
+    "object_repr": "MT001 - Cable conductor 150 mm",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2026-07-23T04:05:45.338Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "9",
+    "object_repr": "Entrega #9",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2026-07-23T04:05:45.338Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "8",
+    "object_repr": "Entrega #8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2026-07-23T04:05:45.338Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "7",
+    "object_repr": "Entrega #7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2026-07-23T04:05:45.338Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "6",
+    "object_repr": "Entrega #6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2026-07-23T04:05:45.338Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "5",
+    "object_repr": "Entrega #5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2026-07-23T04:05:45.338Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "4",
+    "object_repr": "Entrega #4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2026-07-23T04:05:45.338Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "3",
+    "object_repr": "Entrega #3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2026-07-23T04:05:45.338Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "2",
+    "object_repr": "Entrega #2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2026-07-23T04:05:45.338Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "delivery"
+    ],
+    "object_id": "1",
+    "object_repr": "Entrega #1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2026-07-23T04:11:44.597Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "4",
+    "object_repr": "MT001 - Cable media tension 1x150mm 32-20-03699",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2026-07-23T04:12:02.031Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "5",
+    "object_repr": "MT002 - Cable media tension 1x150mm 32-20-03699",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2026-07-23T04:12:12.959Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "6",
+    "object_repr": "MT003 - Cable media tension 1x150mm 32-20-03699",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2026-07-23T04:12:52.821Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "7",
+    "object_repr": "MT004 - Cinta se±alizacion de cables roja",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2026-07-23T04:13:47.496Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "8",
+    "object_repr": "MT005 - Cable cobre 1/0 (50mm)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2026-07-23T04:14:24.377Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "9",
+    "object_repr": "MT006 - Arquetas de tierra",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2026-07-23T04:14:48.678Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "10",
+    "object_repr": "MT007 - Terminal conector N║4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2026-07-23T04:15:37.579Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "11",
+    "object_repr": "MT008 - Terminal conector 1/0",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2026-07-23T04:15:54.643Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "12",
+    "object_repr": "MT009 - placa proteccion mecanica",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2026-07-23T04:17:03.448Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "13",
+    "object_repr": "MT010 - Tuberia 2\" corrugada roja",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2026-07-23T04:17:11.749Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "4",
+    "object_repr": "MT001 - Cable media tension 1x150mm 32-20-03699",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2026-07-23T04:17:18.908Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "5",
+    "object_repr": "MT002 - Cable media tension 1x150mm 32-20-03699",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2026-07-23T04:17:41.117Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "5",
+    "object_repr": "MT002 - Cable media tension 1x150mm 32-20-03699",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2026-07-23T04:17:45.594Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "6",
+    "object_repr": "MT003 - Cable media tension 1x150mm 32-20-03699",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2026-07-23T04:17:49.672Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "7",
+    "object_repr": "MT004 - Cinta se±alizacion de cables roja",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2026-07-23T04:17:53.713Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "8",
+    "object_repr": "MT005 - Cable cobre 1/0 (50mm)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2026-07-23T04:17:57.345Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "9",
+    "object_repr": "MT006 - Arquetas de tierra",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2026-07-23T04:18:01.768Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "10",
+    "object_repr": "MT007 - Terminal conector N║4",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2026-07-23T04:18:05.212Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "10",
+    "object_repr": "MT007 - Terminal conector N║4",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2026-07-23T04:18:12.011Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "11",
+    "object_repr": "MT008 - Terminal conector 1/0",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2026-07-23T04:18:17.393Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "12",
+    "object_repr": "MT009 - placa proteccion mecanica",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2026-07-23T04:18:20.809Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "12",
+    "object_repr": "MT009 - placa proteccion mecanica",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2026-07-23T04:18:24.397Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "13",
+    "object_repr": "MT010 - Tuberia 2\" corrugada roja",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2026-07-23T04:18:27.264Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "13",
+    "object_repr": "MT010 - Tuberia 2\" corrugada roja",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2026-07-23T04:18:33.022Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "10",
+    "object_repr": "MT007 - Terminal conector N║4",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2026-07-23T04:18:37.334Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "11",
+    "object_repr": "MT008 - Terminal conector 1/0",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2026-07-23T04:19:02.999Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "14",
+    "object_repr": "MT011 - Tuberia 4\" corrugada roja",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2026-07-23T04:19:17.960Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "15",
+    "object_repr": "MT012 - Tuberia 6\" corrugada roja",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2026-07-23T04:19:45.711Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "16",
+    "object_repr": "MT013 - Conector Ubolt Cu 3/8\"",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2026-07-23T04:19:58.169Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "17",
+    "object_repr": "MT014 - Electrodo (Pica) 2,4 m 1/2\"",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2026-07-23T04:37:42.989Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "19",
+    "object_repr": "BT002 - Cable baja tension 1x400mm--->VG-5595",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2026-07-23T04:37:50.083Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "18",
+    "object_repr": "BT001 - Cable baja tension 1x400mm--->VG-5616",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2026-07-23T04:38:10.409Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "20",
+    "object_repr": "BT003 - Cable baja tension 1x400mm--->VG-5596",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2026-07-23T04:38:35.062Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "21",
+    "object_repr": "BT004 - Cable baja tension 1x400mm--->VG-5620",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2026-07-23T04:38:50.202Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "22",
+    "object_repr": "BT005 - Cable baja tension 1x400mm--->VG-5580",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2026-07-23T04:39:05.395Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "23",
+    "object_repr": "BT006 - Cable baja tension 1x400mm--->VG-5591",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2026-07-23T04:39:31.469Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "24",
+    "object_repr": "BT007 - Cable baja tension 1x400mm--->VG-5599",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2026-07-23T04:39:44.308Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "25",
+    "object_repr": "BT008 - Cable baja tension 1x400mm--->VG-5593",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2026-07-23T04:40:00.391Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "26",
+    "object_repr": "BT009 - Cable baja tension 1x400mm--->VG-5615",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2026-07-23T04:40:14.511Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "27",
+    "object_repr": "BT010 - Cable baja tension 1x400mm--->VG-5589",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2026-07-23T04:40:30.008Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "28",
+    "object_repr": "BT011 - Cable baja tension 1x400mm--->VG-5592",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2026-07-23T04:40:50.176Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "29",
+    "object_repr": "BT012 - Cable baja tension 1x400mm--->VG-5584",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2026-07-23T04:41:38.655Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "30",
+    "object_repr": "BT013 - Cable baja tension 1x400mm--->VG-5585",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2026-07-23T04:41:55.341Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "31",
+    "object_repr": "BT014 - Cable baja tension 1x400mm--->VG-5578",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2026-07-23T04:42:12.061Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "32",
+    "object_repr": "BT015 - Cable baja tension 1x500mm--->VG-5635",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2026-07-23T04:42:25.791Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "33",
+    "object_repr": "BT016 - Cable baja tension 1x400mm--->VG-5618",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2026-07-23T04:42:51.017Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "34",
+    "object_repr": "BT017 - Cable baja tension 1x400mm--->VG-5586",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2026-07-23T04:43:05.859Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "35",
+    "object_repr": "BT018 - Cable baja tension 1x400mm--->VG-5590",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2026-07-23T04:43:17.659Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "36",
+    "object_repr": "BT019 - Cable baja tension 1x400mm--->VG-5600",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2026-07-23T04:43:46.050Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "37",
+    "object_repr": "BT020 - Cable baja tension 1x400mm--->VG-5617",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2026-07-23T04:44:09.482Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "38",
+    "object_repr": "BT021 - Brida con prteccion uv 55cm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2026-07-23T04:44:34.384Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "39",
+    "object_repr": "BT022 - Brida con prteccion uv 15cm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2026-07-23T04:44:49.637Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "40",
+    "object_repr": "BT023 - Brida con prteccion uv 10cm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2026-07-23T04:45:11.175Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "41",
+    "object_repr": "BT024 - Brida con prteccion uv 64cm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2026-07-23T04:45:52.738Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "42",
+    "object_repr": "BT025 - Brida con prteccion uv 95cm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2026-07-23T04:47:06.150Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "43",
+    "object_repr": "MT015 - cable de fibra optica",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2026-07-23T04:47:20.231Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "44",
+    "object_repr": "BT026 - Cable cobre 35mm--->",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2026-07-23T05:00:36.077Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "45",
+    "object_repr": "MEC001 - Modulo fotovoltaico",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2026-07-23T05:00:53.252Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "46",
+    "object_repr": "MEC002 - Hinca Motora - W6X8,5; S355JR; HDG100; 3640mm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2026-07-23T05:01:09.991Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "47",
+    "object_repr": "MEC003 - Hinca General - W6X7; S355JR; HDG100; 3915mm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2026-07-23T05:01:26.298Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "48",
+    "object_repr": "MEC004 - Hinca General - W6X7; S355JR; HDG100; 3615mm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2026-07-23T05:01:44.269Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "49",
+    "object_repr": "MEC005 - Hinca para inversores",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2026-07-23T05:02:17.532Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "50",
+    "object_repr": "MEC006 - Viga Central - #120x2,5; S420GD; ZM310; 2100mm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2026-07-23T05:02:30.445Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "51",
+    "object_repr": "MEC007 - Viga Externa - #120x2,0; S420GD; ZM310; 11190mm",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2026-07-23T05:14:28.250Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "33",
+    "object_repr": "ENTRADA - Cable cobre 1/0 (50mm)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tipo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2026-07-23T05:14:33.298Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "22",
+    "object_repr": "ENTRADA - Arquetas de tierra",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tipo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2026-07-23T05:40:40.082Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "15",
+    "object_repr": "MT012 - Tuberia 6\" corrugada roja",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2026-07-23T05:41:44.788Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "98",
+    "object_repr": "SALIDA - Tuberia 6\" corrugada roja",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2026-07-23T05:41:44.788Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "97",
+    "object_repr": "SALIDA - Tuberia 6\" corrugada roja",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2026-07-23T05:41:44.788Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "96",
+    "object_repr": "SALIDA - Tuberia 6\" corrugada roja",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2026-07-23T05:41:44.788Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "95",
+    "object_repr": "ENTRADA - Tuberia 6\" corrugada roja",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2026-07-23T05:41:44.788Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "94",
+    "object_repr": "SALIDA - Tuberia 6\" corrugada roja",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2026-07-23T05:42:04.178Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "15",
+    "object_repr": "MT012 - Tuberia 6\" corrugada roja",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2026-07-23T05:48:35.801Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "100",
+    "object_repr": "ENTRADA - Tuberia 6\" corrugada roja",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Saldo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2026-07-23T05:48:47.659Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "103",
+    "object_repr": "ENTRADA - Electrodo (Pica) 2,4 m 1/2\"",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Saldo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2026-07-23T05:55:09.622Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "15",
+    "object_repr": "MT012 - Tuberia 6\" corrugada roja",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 146,
+  "fields": {
+    "action_time": "2026-07-23T06:49:40.247Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "88",
+    "object_repr": "SALIDA - Cable media tension 1x150mm 32-20-03687",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 147,
+  "fields": {
+    "action_time": "2026-07-23T06:50:35.178Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "93",
+    "object_repr": "SALIDA - Cable media tension 1x150mm 32-20-03703",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 148,
+  "fields": {
+    "action_time": "2026-07-23T06:50:35.178Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "91",
+    "object_repr": "SALIDA - Cable media tension 1x150mm 32-20-03699",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 149,
+  "fields": {
+    "action_time": "2026-07-23T06:50:35.178Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "movements",
+      "inventorymovement"
+    ],
+    "object_id": "89",
+    "object_repr": "SALIDA - Cable media tension 1x150mm 32-20-03687",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 150,
+  "fields": {
+    "action_time": "2026-07-23T06:54:37.575Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "6",
+    "object_repr": "MT003 - Cable media tension 1x150mm 32-20-03687",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 151,
+  "fields": {
+    "action_time": "2026-07-23T06:54:44.656Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "5",
+    "object_repr": "MT002 - Cable media tension 1x150mm 32-20-03703",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 152,
+  "fields": {
+    "action_time": "2026-07-23T06:54:50.958Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "materials",
+      "material"
+    ],
+    "object_id": "4",
+    "object_repr": "MT001 - Cable media tension 1x150mm 32-20-03699",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Stock\"]}}]"
+  }
+}
+]
