@@ -20,7 +20,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.WARNING(
-                "Cargando respaldo..."
+                "Iniciando carga del respaldo..."
             )
         )
 
@@ -31,6 +31,6 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                "Respaldo cargado correctamente"
+                "Respaldo cargado correctamente."
             )
         )
