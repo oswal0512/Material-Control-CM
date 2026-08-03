@@ -146,8 +146,7 @@
        Inventario
     </a>
 {% endif %}
-    </a>
-    {% endif %}
+
 
     {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Gerencia" %}
     <a href="{% url 'report_home' %}">
