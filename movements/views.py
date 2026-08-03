@@ -110,7 +110,10 @@ def delivery_detail(request, pk):
             # Descontar inventario
             material.stock -= cantidad
             material.save()
+            material.refresh_from_db()
 
+            print("STOCK DESPUÉS DE GUARDAR:", material.stock)
+            
             # Registrar movimiento de salida
             InventoryMovement.objects.create(
                 material=material,

@@ -128,24 +128,34 @@ class DeliveryDetail(models.Model):
     )
 
     class Meta:
-
         verbose_name = "Detalle de Entrega"
-
         verbose_name_plural = "Detalles de Entrega"
 
-    from materials.models import Material
-
-def save(self, *args, **kwargs):
-
-    material_bd = Material.objects.get(pk=self.material.pk)
-
-    print("================================")
-    print("OBJETO FORMULARIO :", self.material.stock)
-    print("OBJETO BASE DATOS :", material_bd.stock)
-    print("MATERIAL:", material_bd.nombre)
-    print("================================")
-
-    nuevo = self.pk is None
     def __str__(self):
-
         return f"{self.material.nombre} ({self.cantidad})"
+
+    def save(self, *args, **kwargs):
+
+        nuevo = self.pk is None
+
+        if nuevo:
+
+            if self.material.stock < self.cantidad:
+                raise ValidationError(
+                    f"No hay stock suficiente de {self.material.nombre}."
+                )
+
+            self.material.stock -= self.cantidad
+            self.material.save()
+
+            InventoryMovement.objects.create(
+                material=self.material,
+                tipo="SALIDA",
+                cantidad=self.cantidad,
+                saldo=self.material.stock,
+                referencia=f"Entrega #{self.entrega.id}",
+                responsable=self.entrega.responsable,
+                observacion=self.entrega.observacion
+            )
+
+        super().save(*args, **kwargs)

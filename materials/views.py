@@ -1,120 +1,40 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from django.db.models import Q
-from django.core.paginator import Paginator
+from django.contrib.admin.views.decorators import staff_member_required
+from django.db.models import Sum
+from django.contrib import messages
+from decimal import Decimal
 
-from .models import Material
-from .forms import MaterialForm
-from movements.models import InventoryMovement
-from accounts.decorators import almacen_required
+from inventory.models import ReceiptDetail
+from movements.models import DeliveryDetail
+from materials.models import Material
 
 
-@almacen_required
-def material_list(request):
+@staff_member_required
+def recalcular_stock(request):
 
-    ...
+    Material.objects.all().update(stock=Decimal("0.00"))
 
-    buscar = request.GET.get("buscar", "")
+    for material in Material.objects.all():
 
-    materiales = Material.objects.filter(activo=True)
-
-    if buscar:
-        materiales = materiales.filter(
-            Q(codigo__icontains=buscar) |
-            Q(nombre__icontains=buscar)
+        entradas = (
+            ReceiptDetail.objects
+            .filter(material=material)
+            .aggregate(total=Sum("cantidad"))["total"]
+            or Decimal("0.00")
         )
 
-    paginator = Paginator(materiales.order_by("codigo"), 10)
-
-    page = request.GET.get("page")
-
-    materiales = paginator.get_page(page)
-
-    return render(
-        request,
-        "materials/list.html",
-        {
-            "materiales": materiales,
-            "buscar": buscar,
-        },
-    )
-
-@almacen_required
-def material_create(request):
-
-    if request.method == "POST":
-
-        form = MaterialForm(request.POST)
-
-        if form.is_valid():
-            form.save()
-            return redirect("material_list")
-
-    else:
-
-        form = MaterialForm()
-
-    return render(
-        request,
-        "materials/form.html",
-        {
-            "form": form,
-        },
-    )
-
-@almacen_required
-def material_update(request, pk):
-
-    material = get_object_or_404(Material, pk=pk)
-
-    if request.method == "POST":
-
-        form = MaterialForm(
-            request.POST,
-            instance=material,
+        salidas = (
+            DeliveryDetail.objects
+            .filter(material=material)
+            .aggregate(total=Sum("cantidad"))["total"]
+            or Decimal("0.00")
         )
 
-        if form.is_valid():
-            form.save()
-            return redirect("material_list")
+        material.stock = entradas - salidas
+        material.save(update_fields=["stock"])
 
-    else:
-
-        form = MaterialForm(instance=material)
-
-    return render(
+    messages.success(
         request,
-        "materials/form.html",
-        {
-            "form": form,
-        },
+        "✅ El stock de todos los materiales fue recalculado correctamente."
     )
-
-@almacen_required
-def material_delete(request, pk):
-
-    material = get_object_or_404(Material, pk=pk)
-
-    material.activo = False
-    material.save()
 
     return redirect("material_list")
-
-@almacen_required
-def material_kardex(request, pk):
-
-    material = get_object_or_404(Material, pk=pk)
-
-    movimientos = (
-        InventoryMovement.objects
-        .filter(material_id=pk)
-        .order_by("-fecha", "-id")
-    )
-
-    return render(
-        request,
-        "materials/kardex.html",
-        {
-            "material": material,
-            "movimientos": movimientos,
-        },
-    )
