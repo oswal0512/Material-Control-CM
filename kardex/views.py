@@ -5,8 +5,7 @@ from materials.models import Material
 
 from accounts.decorators import consulta_required
 
-
-@almacen_required
+@consulta_required
 def kardex_list(request):
 
     material_id = request.GET.get("material")
@@ -20,19 +19,16 @@ def kardex_list(request):
     )
 
     if material_id:
-
         movimientos = movimientos.filter(
             material_id=material_id
         )
 
     if fecha_inicio:
-
         movimientos = movimientos.filter(
             fecha__gte=fecha_inicio
         )
 
     if fecha_fin:
-
         movimientos = movimientos.filter(
             fecha__lte=fecha_fin
         )
@@ -43,22 +39,14 @@ def kardex_list(request):
         "nombre"
     )
 
-    context = {
-
-        "movimientos": movimientos,
-
-        "materiales": materiales,
-
-        "material_seleccionado": material_id,
-
-        "fecha_inicio": fecha_inicio,
-
-        "fecha_fin": fecha_fin,
-
-    }
-
     return render(
         request,
         "kardex/list.html",
-        context
+        {
+            "movimientos": movimientos,
+            "materiales": materiales,
+            "material_seleccionado": material_id,
+            "fecha_inicio": fecha_inicio,
+            "fecha_fin": fecha_fin,
+        }
     )
