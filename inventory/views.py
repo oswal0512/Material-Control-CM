@@ -10,8 +10,11 @@ from .forms import (
     ReceiptForm,
     ReceiptDetailForm,
 )
-from accounts.decorators import almacen_required
-@almacen_required
+from accounts.decorators import (
+    almacen_required,
+    consulta_required,
+)
+@consulta_required
 def receipt_list(request):
 
     recepciones = Receipt.objects.all().order_by(
@@ -60,7 +63,7 @@ def receipt_create(request):
         }
     )
 
-@almacen_required
+@consulta_required
 def receipt_detail(request, pk):
 
     recepcion = get_object_or_404(
@@ -197,7 +200,7 @@ def receipt_detail_delete(request, pk):
         "receipt_detail",
         pk=recepcion.id
     )
-@almacen_required
+@consulta_required
 def inventory_list(request):
 
     from materials.models import Material

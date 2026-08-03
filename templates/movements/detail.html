@@ -212,28 +212,22 @@
 
 <td>
 
-{% if entrega.estado == "BORRADOR" %}
+{% if entrega.estado == "BORRADOR" and user.groups.all.0.name == "Administrador" or entrega.estado == "BORRADOR" and user.groups.all.0.name == "Almacenista" %}
 
     <a href="{% url 'delivery_detail_edit' detalle.id %}"
        class="btn btn-warning btn-sm">
-
         ✏️
-
     </a>
 
     <a href="{% url 'delivery_detail_delete' detalle.id %}"
        class="btn btn-danger btn-sm">
-
         🗑
-
     </a>
 
 {% else %}
 
     <span class="text-muted">
-
-        🔒
-
+        Solo lectura
     </span>
 
 {% endif %}
@@ -296,7 +290,7 @@
 
 </a>
 
-    {% if entrega.estado == "BORRADOR" %}
+    {% if entrega.estado == "BORRADOR" and user.groups.all.0.name == "Administrador" or entrega.estado == "BORRADOR" and user.groups.all.0.name == "Almacenista" %}
 
     <form method="post"
           action="{% url 'delivery_finalize' entrega.id %}"

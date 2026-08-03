@@ -140,10 +140,12 @@
         Kardex
     </a>
 
-    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" or user.groups.all.0.name == "Gerencia" or user.groups.all.0.name == "Consulta" %}
     <a href="{% url 'inventory_list' %}">
-        <i class="bi bi-clipboard-data"></i>
-        Inventario
+     <i class="bi bi-clipboard-data"></i>
+       Inventario
+    </a>
+{% endif %}
     </a>
     {% endif %}
 
@@ -154,12 +156,12 @@
     </a>
     {% endif %}
 
-    {% if user.groups.all.0.name == "Administrador" %}
-    <a href="/admin/">
-        <i class="bi bi-gear"></i>
-        Administración
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" or user.groups.all.0.name == "Gerencia" or user.groups.all.0.name == "Consulta" %}
+    <a href="{% url 'inventory_list' %}">
+      <i class="bi bi-clipboard-data"></i>
+         Inventario
     </a>
-    {% endif %}
+{% endif %}
 
     <li class="nav-item">
     <a class="nav-link" href="{% url 'supplier_list' %}">

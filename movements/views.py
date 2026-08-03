@@ -11,8 +11,11 @@ from .forms import (
     DeliveryForm,
     DeliveryDetailForm,
 )
-from accounts.decorators import almacen_required
-@almacen_required
+from accounts.decorators import (
+    almacen_required,
+    consulta_required,
+)
+@consulta_required
 def delivery_list(request):
 
     entregas = Delivery.objects.all().order_by("-fecha", "-id")
@@ -58,7 +61,7 @@ def delivery_create(request):
         }
     )
 
-@almacen_required
+@consulta_required
 def delivery_detail(request, pk):
 
     entrega = get_object_or_404(

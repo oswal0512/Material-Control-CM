@@ -6,9 +6,11 @@
 
     <h2>Materiales</h2>
 
-    <a href="{% url 'material_create' %}" class="btn btn-success">
-        ➕ Nuevo Material
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
+    <a href="{% url 'material_create' %}">
+         ➕Nuevo Material
     </a>
+{% endif %}
 
 </div>
 
@@ -70,28 +72,27 @@
 
                <td>
 
-    <a
-        href="{% url 'material_update' material.id %}"
-        class="btn btn-warning btn-sm">
-        ✏️ Editar
-    </a>
+    <td>
 
-    <a
-        href="{% url 'material_delete' material.id %}"
-        class="btn btn-danger btn-sm"
-        onclick="return confirm('¿Desea desactivar este material?');">
-        🗑️ Eliminar
-    </a>
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
 
-    <a
-        href="{% url 'material_kardex' material.id %}"
-        class="btn btn-info btn-sm">
+        <a href="{% url 'material_update' material.id %}" class="btn btn-warning btn-sm">
+            ✏️ Editar
+        </a>
+
+        <a href="{% url 'material_delete' material.id %}"
+           class="btn btn-danger btn-sm"
+           onclick="return confirm('¿Desea eliminar este material?');">
+            🗑️ Eliminar
+        </a>
+
+    {% endif %}
+
+    <a href="{% url 'material_kardex' material.id %}"
+       class="btn btn-info btn-sm">
         📋 Kardex
     </a>
 
-</td>
-
-            </td>
 
         </tr>
 

@@ -5,7 +5,11 @@ from django.core.paginator import Paginator
 from .models import Material
 from .forms import MaterialForm
 from movements.models import InventoryMovement
-from accounts.decorators import (almacen_required, consulta_required,)
+from accounts.decorators import (
+    almacen_required,
+    consulta_required,
+    almacen_consulta_required,
+)
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib import messages
 from django.db.models import Sum

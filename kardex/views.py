@@ -3,9 +3,10 @@ from django.shortcuts import render
 from movements.models import InventoryMovement
 from materials.models import Material
 
-from accounts.decorators import consulta_required
+from accounts.decorators import almacen_consulta_required
 
-@consulta_required
+
+@almacen_consulta_required
 def kardex_list(request):
 
     material_id = request.GET.get("material")
