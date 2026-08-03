@@ -114,22 +114,22 @@
         Dashboard
     </a>
 
-    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
-    <a href="/materials/">
-        <i class="bi bi-box-seam"></i>
-        Materiales
-    </a>
-    {% endif %}
+    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" or user.groups.all.0.name == "Gerencia" or user.groups.all.0.name == "Consulta" %}
+<a href="/materials/">
+    <i class="bi bi-box-seam"></i>
+    Materiales
+</a>
+{% endif %}
 
-    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
-    <a href="/recepciones/">
+     {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" or user.groups.all.0.name == "Gerencia" or user.groups.all.0.name == "Consulta" %}
+<a href="/recepciones/">
         <i class="bi bi-box-arrow-in-down"></i>
         Recepciones
     </a>
     {% endif %}
 
-    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
-    <a href="/entregas/">
+     {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" or user.groups.all.0.name == "Gerencia" or user.groups.all.0.name == "Consulta" %}
+<a href="/entregas/">
         <i class="bi bi-box-arrow-up"></i>
         Entregas
     </a>

@@ -3,7 +3,7 @@ from django.shortcuts import render
 from movements.models import InventoryMovement
 from materials.models import Material
 
-from accounts.decorators import almacen_required
+from accounts.decorators import consulta_required
 
 
 @almacen_required

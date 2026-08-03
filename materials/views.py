@@ -5,7 +5,7 @@ from django.core.paginator import Paginator
 from .models import Material
 from .forms import MaterialForm
 from movements.models import InventoryMovement
-from accounts.decorators import almacen_required
+from accounts.decorators import (almacen_required, consulta_required,)
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib import messages
 from django.db.models import Sum
@@ -45,7 +45,7 @@ def recalcular_stock(request):
 
     return redirect("material_list")
 
-@almacen_required
+@consulta_required
 def material_list(request):
 
     buscar = request.GET.get("buscar", "")
@@ -134,7 +134,7 @@ def material_delete(request, pk):
 
     return redirect("material_list")
 
-@almacen_required
+@consulta_required
 def material_kardex(request, pk):
 
     material = get_object_or_404(Material, pk=pk)
