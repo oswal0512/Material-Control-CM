@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.shortcuts import render, redirect, get_object_or_404
+from django.db.models import F
 
 from .models import (
     Delivery,
@@ -11,14 +12,20 @@ from .forms import (
     DeliveryForm,
     DeliveryDetailForm,
 )
+
 from accounts.decorators import (
     almacen_required,
     consulta_required,
 )
+
+
 @consulta_required
 def delivery_list(request):
 
-    entregas = Delivery.objects.all().order_by("-fecha", "-id")
+    entregas = Delivery.objects.all().order_by(
+        "-fecha",
+        "-id"
+    )
 
     return render(
         request,
@@ -27,6 +34,7 @@ def delivery_list(request):
             "entregas": entregas
         }
     )
+
 
 @almacen_required
 def delivery_create(request):
@@ -61,6 +69,7 @@ def delivery_create(request):
         }
     )
 
+
 @consulta_required
 def delivery_detail(request, pk):
 
@@ -92,17 +101,15 @@ def delivery_detail(request, pk):
             detalle.entrega = entrega
 
             material = detalle.material
-
             cantidad = detalle.cantidad
 
-            # Validar stock disponible
-            if cantidad > material.stock:
+            material.refresh_from_db()
+
+            if material.stock < cantidad:
 
                 messages.error(
                     request,
-                    f"❌ Stock insuficiente para '{material.nombre}'. "
-                    f"Disponible: {material.stock} | "
-                    f"Solicitado: {cantidad}"
+                    f"No existe stock suficiente. Disponible: {material.stock}"
                 )
 
                 return redirect(
@@ -110,14 +117,18 @@ def delivery_detail(request, pk):
                     pk=pk
                 )
 
-            # Descontar inventario
-            material.stock -= cantidad
-            material.save()
+            Material = material.__class__
+
+            Material.objects.filter(
+                pk=material.pk
+            ).update(
+                stock=F("stock") - cantidad
+            )
+
             material.refresh_from_db()
 
-            print("STOCK DESPUÉS DE GUARDAR:", material.stock)
-            
-            # Registrar movimiento de salida
+            detalle.save()
+
             InventoryMovement.objects.create(
                 material=material,
                 tipo="SALIDA",
@@ -128,11 +139,9 @@ def delivery_detail(request, pk):
                 observacion="Entrega de material"
             )
 
-            detalle.save()
-
             messages.success(
                 request,
-                "✅ Material agregado correctamente."
+                "Material agregado correctamente."
             )
 
             return redirect(
@@ -153,8 +162,9 @@ def delivery_detail(request, pk):
             "entrega": entrega,
             "form": form,
             "detalles": detalles,
-        },
+        }
     )
+
 @almacen_required
 def delivery_finalize(request, pk):
 
@@ -174,7 +184,7 @@ def delivery_finalize(request, pk):
 
         messages.warning(
             request,
-            "La entrega ya se encuentra finalizada."
+            "La entrega ya fue finalizada."
         )
 
         return redirect(
@@ -188,13 +198,14 @@ def delivery_finalize(request, pk):
 
     messages.success(
         request,
-        "✅ La entrega fue finalizada correctamente."
+        "Entrega finalizada correctamente."
     )
 
     return redirect(
         "delivery_detail",
         pk=pk
     )
+
 
 @almacen_required
 def delivery_detail_edit(request, pk):
@@ -218,6 +229,8 @@ def delivery_detail_edit(request, pk):
             pk=entrega.id
         )
 
+    cantidad_anterior = detalle.cantidad
+
     form = DeliveryDetailForm(
         request.POST or None,
         instance=detalle
@@ -227,9 +240,63 @@ def delivery_detail_edit(request, pk):
 
         if form.is_valid():
 
-            messages.info(
+            nuevo = form.save(commit=False)
+
+            diferencia = nuevo.cantidad - cantidad_anterior
+
+            material = nuevo.material
+
+            material.refresh_from_db()
+
+            if diferencia > 0 and material.stock < diferencia:
+
+                messages.error(
+                    request,
+                    f"No existe stock suficiente. Disponible: {material.stock}"
+                )
+
+                return redirect(
+                    "delivery_detail",
+                    pk=entrega.id
+                )
+
+            Material = material.__class__
+
+            if diferencia > 0:
+
+                Material.objects.filter(
+                    pk=material.pk
+                ).update(
+                    stock=F("stock") - diferencia
+                )
+
+            elif diferencia < 0:
+
+                Material.objects.filter(
+                    pk=material.pk
+                ).update(
+                    stock=F("stock") + abs(diferencia)
+                )
+
+            material.refresh_from_db()
+
+            nuevo.save()
+
+            if diferencia != 0:
+
+                InventoryMovement.objects.create(
+                    material=material,
+                    tipo="SALIDA" if diferencia > 0 else "ENTRADA",
+                    cantidad=abs(diferencia),
+                    saldo=material.stock,
+                    referencia=f"ENT-{entrega.id}",
+                    responsable=entrega.responsable,
+                    observacion="Edición de entrega"
+                )
+
+            messages.success(
                 request,
-                "La edición de cantidades se implementará en el siguiente paso."
+                "Detalle actualizado correctamente."
             )
 
             return redirect(
@@ -269,14 +336,22 @@ def delivery_detail_delete(request, pk):
 
     material = detalle.material
 
-    material.stock += detalle.cantidad
+    cantidad = detalle.cantidad
 
-    material.save()
+    Material = material.__class__
+
+    Material.objects.filter(
+        pk=material.pk
+    ).update(
+        stock=F("stock") + cantidad
+    )
+
+    material.refresh_from_db()
 
     InventoryMovement.objects.create(
         material=material,
         tipo="ENTRADA",
-        cantidad=detalle.cantidad,
+        cantidad=cantidad,
         saldo=material.stock,
         referencia=f"ELIM-ENT-{entrega.id}",
         responsable=entrega.responsable,

@@ -1,6 +1,4 @@
 from django.db import models
-from django.core.exceptions import ValidationError
-
 from materials.models import Material
 from projects.models import Project
 
@@ -51,28 +49,20 @@ class InventoryMovement(models.Model):
     )
 
     class Meta:
-
         ordering = ["-fecha"]
-
         verbose_name = "Movimiento de Inventario"
-
         verbose_name_plural = "Movimientos de Inventario"
 
     def __str__(self):
-
         return f"{self.tipo} - {self.material.nombre}"
 
 
 class Delivery(models.Model):
 
     ESTADOS = (
-
         ("BORRADOR", "Borrador"),
-
         ("FINALIZADA", "Finalizada"),
-
         ("ANULADA", "Anulada"),
-
     )
 
     proyecto = models.ForeignKey(
@@ -97,15 +87,11 @@ class Delivery(models.Model):
     )
 
     class Meta:
-
         ordering = ["-fecha", "-id"]
-
         verbose_name = "Entrega"
-
         verbose_name_plural = "Entregas"
 
     def __str__(self):
-
         return f"Entrega #{self.id}"
 
 
@@ -133,29 +119,3 @@ class DeliveryDetail(models.Model):
 
     def __str__(self):
         return f"{self.material.nombre} ({self.cantidad})"
-
-    def save(self, *args, **kwargs):
-
-        nuevo = self.pk is None
-
-        if nuevo:
-
-            if self.material.stock < self.cantidad:
-                raise ValidationError(
-                    f"No hay stock suficiente de {self.material.nombre}."
-                )
-
-            self.material.stock -= self.cantidad
-            self.material.save()
-
-            InventoryMovement.objects.create(
-                material=self.material,
-                tipo="SALIDA",
-                cantidad=self.cantidad,
-                saldo=self.material.stock,
-                referencia=f"Entrega #{self.entrega.id}",
-                responsable=self.entrega.responsable,
-                observacion=self.entrega.observacion
-            )
-
-        super().save(*args, **kwargs)
