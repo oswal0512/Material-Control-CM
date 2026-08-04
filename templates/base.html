@@ -140,15 +140,7 @@
         Kardex
     </a>
 
-    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" or user.groups.all.0.name == "Gerencia" or user.groups.all.0.name == "Consulta" %}
-    <a href="{% url 'inventory_list' %}">
-     <i class="bi bi-clipboard-data"></i>
-       Inventario
-    </a>
-{% endif %}
-
-
-    {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Gerencia" %}
+       {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Gerencia" %}
     <a href="{% url 'report_home' %}">
         <i class="bi bi-file-earmark-bar-graph"></i>
         Reportes
@@ -163,12 +155,17 @@
 {% endif %}
 
     <li class="nav-item">
-    <a class="nav-link" href="{% url 'supplier_list' %}">
-        <i class="fas fa-truck"></i>
+    <a href="{% url 'supplier_list' %}">
+     <i class="bi bi-truck"></i>
         Proveedores
     </a>
 </li>
-
+    {% if user.is_superuser %}
+    <a href="{% url 'admin:index' %}">
+        <i class="bi bi-gear-fill"></i>
+    Administrador
+    </a>
+{% endif %}
     <hr class="text-white">
 
     <div class="text-center text-white mb-3">
