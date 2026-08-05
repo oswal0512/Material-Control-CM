@@ -14,19 +14,99 @@
 
 </div>
 
-<form method="get" class="row mb-3">
+<div class="card shadow mb-4">
 
-    <div class="col-md-6">
-        
-        <input
-            type="text"
-            class="form-control"
-            name="buscar"
-            placeholder="Buscar por código o nombre..."
-            value="{{ buscar }}"
-        >
+    <div class="card-header bg-primary text-white">
+        <i class="bi bi-search"></i>
+        Filtros de consulta
+    </div>
+
+    <div class="card-body">
+
+        <form method="get">
+
+            <div class="row">
+
+                <div class="col-md-5">
+
+                    <label class="form-label">
+                        Código o Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        name="buscar"
+                        class="form-control"
+                        placeholder="Ingrese código o nombre..."
+                        value="{{ buscar }}"
+                    >
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <label class="form-label">
+                        Estado
+                    </label>
+
+                    <select
+                        name="estado"
+                        class="form-select">
+
+                        <option value=""
+                            {% if estado == "" %}selected{% endif %}>
+                            Todos
+                        </option>
+
+                        <option value="1"
+                            {% if estado == "1" %}selected{% endif %}>
+                            Activos
+                        </option>
+
+                        <option value="0"
+                            {% if estado == "0" %}selected{% endif %}>
+                            Inactivos
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-md-2 d-grid">
+
+                    <label class="form-label">&nbsp;</label>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        <i class="bi bi-search"></i>
+                        Consultar
+
+                    </button>
+
+                </div>
+
+                <div class="col-md-2 d-grid">
+
+                    <label class="form-label">&nbsp;</label>
+
+                    <a href="{% url 'material_list' %}"
+                       class="btn btn-secondary">
+
+                        Limpiar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </form>
 
     </div>
+
+</div>
 
     <div class="col-md-2">
 
@@ -69,10 +149,6 @@
             <td>{{ material.stock }}</td>
 
             <td>
-
-               <td>
-
-    <td>
 
     {% if user.groups.all.0.name == "Administrador" or user.groups.all.0.name == "Almacenista" %}
 

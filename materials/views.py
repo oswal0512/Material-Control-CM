@@ -14,7 +14,6 @@ from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib import messages
 from django.db.models import Sum
 from decimal import Decimal
-
 from inventory.models import ReceiptDetail
 from movements.models import DeliveryDetail
 
@@ -54,15 +53,39 @@ def material_list(request):
 
     buscar = request.GET.get("buscar", "")
 
-    materiales = Material.objects.filter(activo=True)
+    estado = request.GET.get("estado", "1")
+
+    materiales = Material.objects.all()
+
+    # -------------------------------
+    # Filtro por estado
+    # -------------------------------
+
+    if estado == "1":
+        materiales = materiales.filter(activo=True)
+
+    elif estado == "0":
+        materiales = materiales.filter(activo=False)
+
+    # -------------------------------
+    # Filtro por código o nombre
+    # -------------------------------
 
     if buscar:
+
         materiales = materiales.filter(
+
             Q(codigo__icontains=buscar) |
             Q(nombre__icontains=buscar)
+
         )
 
-    paginator = Paginator(materiales.order_by("codigo"), 10)
+    materiales = materiales.order_by("codigo")
+
+    paginator = Paginator(
+        materiales,
+        10
+    )
 
     page = request.GET.get("page")
 
@@ -74,6 +97,7 @@ def material_list(request):
         {
             "materiales": materiales,
             "buscar": buscar,
+            "estado": estado,
         },
     )
 

@@ -9,7 +9,103 @@
     </h2>
 
 </div>
+<div class="card shadow mb-4">
 
+    <div class="card-header bg-primary text-white">
+
+        <i class="bi bi-search"></i>
+
+        Filtros de consulta
+
+    </div>
+
+    <div class="card-body">
+
+        <form method="get">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <label class="form-label">
+
+                        Código o Material
+
+                    </label>
+
+                    <input
+                        type="text"
+                        name="buscar"
+                        class="form-control"
+                        value="{{ buscar }}"
+                        placeholder="Código o nombre">
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <label class="form-label">
+
+                        Stock
+
+                    </label>
+
+                    <select
+                        class="form-select"
+                        name="estado">
+
+                        <option value=""
+                            {% if estado == "" %}selected{% endif %}>
+                            Todos
+                        </option>
+
+                        <option value="con"
+                            {% if estado == "con" %}selected{% endif %}>
+                            Con stock
+                        </option>
+
+                        <option value="sin"
+                            {% if estado == "sin" %}selected{% endif %}>
+                            Sin stock
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-md-2 d-grid">
+
+                    <label class="form-label">&nbsp;</label>
+
+                    <button
+                        class="btn btn-primary">
+
+                        Buscar
+
+                    </button>
+
+                </div>
+
+                <div class="col-md-2 d-grid">
+
+                    <label class="form-label">&nbsp;</label>
+
+                    <a href="{% url 'inventory_list' %}"
+                       class="btn btn-secondary">
+
+                        Limpiar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
 
 <!-- Resumen -->
 

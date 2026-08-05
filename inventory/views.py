@@ -18,12 +18,52 @@ from accounts.decorators import (
     almacen_required,
     consulta_required,
 )
+from django.db.models import Q
+from materials.models import Material
 
 
 @consulta_required
 def receipt_list(request):
 
-    recepciones = Receipt.objects.all().order_by(
+    buscar = request.GET.get("buscar", "")
+    proyecto = request.GET.get("proyecto", "")
+    fecha_inicio = request.GET.get("fecha_inicio", "")
+    fecha_fin = request.GET.get("fecha_fin", "")
+
+    recepciones = Receipt.objects.all()
+
+    if buscar:
+
+        recepciones = recepciones.filter(
+
+            Q(proveedor__icontains=buscar) |
+            Q(numero_remision__icontains=buscar)
+
+        )
+
+    if proyecto:
+
+        recepciones = recepciones.filter(
+            proyecto_id=proyecto
+        )
+
+    if fecha_inicio:
+
+        recepciones = recepciones.filter(
+            fecha__gte=fecha_inicio
+        )
+
+    if fecha_fin:
+
+        recepciones = recepciones.filter(
+            fecha__lte=fecha_fin
+        )
+
+    from projects.models import Project
+
+    proyectos = Project.objects.order_by("nombre")
+
+    recepciones = recepciones.order_by(
         "-fecha",
         "-id"
     )
@@ -32,10 +72,14 @@ def receipt_list(request):
         request,
         "inventory/list.html",
         {
-            "recepciones": recepciones
+            "recepciones": recepciones,
+            "buscar": buscar,
+            "proyectos": proyectos,
+            "proyecto": proyecto,
+            "fecha_inicio": fecha_inicio,
+            "fecha_fin": fecha_fin,
         }
     )
-
 
 @almacen_required
 def receipt_create(request):
@@ -254,11 +298,33 @@ def receipt_detail_delete(request, pk):
 @consulta_required
 def inventory_list(request):
 
-    from materials.models import Material
+    buscar = request.GET.get("buscar", "")
+    estado = request.GET.get("estado", "")
 
-    materiales = Material.objects.filter(
-        activo=True
-    ).order_by(
+    materiales = Material.objects.filter(activo=True)
+
+    if buscar:
+
+        materiales = materiales.filter(
+
+            Q(codigo__icontains=buscar) |
+            Q(nombre__icontains=buscar)
+
+        )
+
+    if estado == "con":
+
+        materiales = materiales.filter(
+            stock__gt=0
+        )
+
+    elif estado == "sin":
+
+        materiales = materiales.filter(
+            stock__lte=0
+        )
+
+    materiales = materiales.order_by(
         "nombre"
     )
 
@@ -266,6 +332,8 @@ def inventory_list(request):
         request,
         "inventory/inventory.html",
         {
-            "materiales": materiales
+            "materiales": materiales,
+            "buscar": buscar,
+            "estado": estado,
         }
     )
