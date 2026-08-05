@@ -1,6 +1,7 @@
 from django.db import models
 from materials.models import Material
 from projects.models import Project
+from django.utils import timezone
 
 
 class InventoryMovement(models.Model):
@@ -16,7 +17,7 @@ class InventoryMovement(models.Model):
     )
 
     fecha = models.DateTimeField(
-        auto_now_add=True
+    default=timezone.now
     )
 
     tipo = models.CharField(
