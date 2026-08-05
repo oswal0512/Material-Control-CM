@@ -20,7 +20,25 @@
 
                 {% csrf_token %}
 
-                {{ form.as_p }}
+                <div class="mb-3">
+             {{ form.proyecto.label_tag }}
+             {{ form.proyecto }}
+        </div>
+
+        <div class="mb-3">
+             {{ form.responsable.label_tag }}
+             {{ form.responsable }}
+        </div>
+
+        <div class="mb-3">
+             {{ form.fecha.label_tag }}
+             {{ form.fecha }}
+        </div>
+
+        <div class="mb-3">
+            {{ form.observacion.label_tag }}
+            {{ form.observacion }}
+        </div>
 
                 <button type="submit" class="btn btn-success">
                     💾 Guardar y continuar

@@ -16,6 +16,8 @@ from django.db.models import Sum
 from decimal import Decimal
 from inventory.models import ReceiptDetail
 from movements.models import DeliveryDetail
+from inventory.models import Receipt, ReceiptDetail
+from movements.models import Delivery, DeliveryDetail, InventoryMovement
 
 @staff_member_required
 def recalcular_stock(request):
@@ -181,3 +183,23 @@ def material_kardex(request, pk):
             "movimientos": movimientos,
         },
     )
+    
+@staff_member_required
+def limpiar_inventario(request):
+
+    ReceiptDetail.objects.all().delete()
+    Receipt.objects.all().delete()
+
+    DeliveryDetail.objects.all().delete()
+    Delivery.objects.all().delete()
+
+    InventoryMovement.objects.all().delete()
+
+    Material.objects.all().update(stock=0)
+
+    messages.success(
+        request,
+        "✅ Inventario reiniciado correctamente."
+    )
+
+    return redirect("material_list")

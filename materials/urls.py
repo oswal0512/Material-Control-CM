@@ -8,4 +8,5 @@ urlpatterns = [
     path("eliminar/<int:pk>/", views.material_delete, name="material_delete"),
     path("kardex/<int:pk>/", views.material_kardex, name="material_kardex"),
     path("recalcular-stock/", views.recalcular_stock, name="recalcular_stock",),
+    path("reiniciar/", views.limpiar_inventario, name="limpiar_inventario",),
 ]

@@ -12,6 +12,16 @@
     </a>
 {% endif %}
 
+    {% if user.is_superuser %}
+    <a href="{% url 'limpiar_inventario' %}"
+    class="btn btn-danger"
+    onclick="return confirm('¿Está seguro de eliminar TODAS las recepciones, entregas y kardex?');">
+
+        🗑 Reiniciar Inventario
+
+    </a>
+{% endif %}
+
 </div>
 
 <div class="card shadow mb-4">
