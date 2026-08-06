@@ -194,12 +194,12 @@ def receipt_detail_edit(request, pk):
 
     cantidad_anterior = detalle.cantidad
 
-    form = ReceiptDetailForm(
-        request.POST or None,
-        instance=detalle
-    )
-
     if request.method == "POST":
+
+        form = ReceiptDetailForm(
+            request.POST,
+            instance=detalle
+        )
 
         if form.is_valid():
 
@@ -241,14 +241,17 @@ def receipt_detail_edit(request, pk):
                 pk=recepcion.id
             )
 
-        return render(
+    else:
+
+        form = ReceiptDetailForm(instance=detalle)
+
+    return render(
         request,
         "inventory/form.html",
         {
-            "form": form
+            "form": form,
         }
     )
-
 
 @almacen_required
 def receipt_detail_delete(request, pk):
